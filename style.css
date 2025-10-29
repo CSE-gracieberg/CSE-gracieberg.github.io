@@ -7,13 +7,13 @@ h1 {
 	text-align: center;
 }
 .about {
-    background: #f7f1e8;   /* light cream like your blobs */
+    background: #f7f1e8;   
     padding: 15px;
     border-radius: 20px;
 }
 
 .skills {
-    background: #ead4ca;   /* soft rose-beige for contrast */
+    background: #ead4ca;   
     padding: 15px;
     border-radius: 20px;
 }
@@ -51,7 +51,34 @@ h1 {
 	color: #3d0a0f; 
 }
 .contact {
-    background: #f7f1e8;   /* same light cream as About */
+    background: #f7f1e8;   
     padding: 15px;
     border-radius: 20px;
+}
+h2 {
+  color: #9f3e48;
+  font-size: 1.05rem;  
+  margin: 0 0 8px 0;
+}
+
+.about, .skills, .contact {
+  padding: 20px;        
+  border-radius: 18px;  
+}
+
+
+.project {
+  border-radius: 14px;  
+  padding: 22px 12px;   
+}
+
+.about p, .skills p, .contact p, .project p {
+  font-size: 0.95rem;
+  color: #3d0a0f;
+  line-height: 1.45;
+}
+
+.project h3 {
+  margin-left: 0;      
+  text-align: center;
 }
