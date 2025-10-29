@@ -6,84 +6,6 @@ h1 {
 color: #9f3e48;
 text-align: center;
 }
-
-h1 {
-color: #9f3e48;
-font-family: Georgia, Helvetica, sans-serif;
-text-align: left;
-
-}
-h2 {
-color: #d0646f;
-font-family: Georgia, Helvetica, sans-serif;
-text-align: left;
-
-}
-
-p {
-color: #f58590;
-font-family: Georgia, Helvetica, sans-serif;
-text-align: left;
-}
-
-h1 {
-color: #9f3e48;
-font-family: Georgia, Helvetica, sans-serif;
-text-align: left;
-
-}
-h2 {
-color: #d0646f;
-font-family: Georgia, Helvetica, sans-serif;
-text-align: left;
-
-}
-
-p {
-color: #f58590;
-font-family: Georgia, Helvetica, sans-serif;
-text-align: left;
-}
-
-
-h1 {
-color: #9f3e48;
-font-family: Georgia, Helvetica, sans-serif;
-text-align: left;
-
-}
-h2 {
-color: #d0646f;
-font-family: Georgia, Helvetica, sans-serif;
-text-align: left;
-
-}
-
-p {
-color: #f58590;
-font-family: Georgia, Helvetica, sans-serif;
-text-align: left;
-}
-
-
-h1 {
-color: #9f3e48;
-font-family: Georgia, Helvetica, sans-serif;
-text-align: left;
-
-}
-h2 {
-color: #d0646f;
-font-family: Georgia, Helvetica, sans-serif;
-text-align: left;
-
-}
-
-p {
-color: #f58590;
-font-family: Georgia, Helvetica, sans-serif;
-text-align: left;
-}
 .projects {
 /* make the blobs float side-by-side */
 display:flex;
@@ -121,4 +43,3 @@ text-align: center;
 text-align: center;
 margin: 15px;
 }
-
