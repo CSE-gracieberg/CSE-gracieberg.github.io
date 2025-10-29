@@ -6,6 +6,8 @@ h1 {
     color: #9f3e48;
     text-align: center;
 }
+
+
 .projects { display:flex; flex-wrap:wrap; } /* condensed to save space */
 .project {
 width: 30%;
