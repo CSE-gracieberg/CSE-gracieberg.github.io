@@ -1,72 +1,21 @@
-/* reset-ish helpful rule so padding doesn't add to width */
+/* consistent box sizing */
 * { box-sizing: border-box; }
 
 body {
   background: #efe8dc;
   font-family: Arial, Helvetica, sans-serif;
   margin: 24px;
-  color: #222;
+  color: #3d0a0f;
 }
 
-/* header */
+/* main header */
 h1 {
   color: #9f3e48;
   text-align: center;
   margin-bottom: 12px;
 }
 
-/* layout for project blobs */
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;               /* nicer spacing than manual margins */
-  align-items: flex-start;
-}
-
-/* make the h2 take its own line */
-.projects h2 {
-  width: 100%;
-  margin: 0 0 12px 0;
-}
-
-/* each project "blob" */
-.project {
-  width: calc(33.333% - 16px);    /* three columns, accounting for gap */
-  background: #ffffff;            /* CONTRAST with body so blobs are visible */
-  margin: 0;
-  padding: 18px;
-  border-radius: 16px;            /* pleasant rounded corners */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-  border: 1px solid rgba(0,0,0,0.06);
-  min-width: 220px;               /* prevents too-narrow blobs on small screens */
-}
-
-/* title inside each blob */
-.project h3 {
-  margin: 0 0 8px 0;              /* remove large left offset */
-  font-size: 1.05rem;
-}
-
-/* images: responsive and centered */
-.project img {
-  display: block;
-  width: 100%;         /* scale to blob width */
-  height: auto;        /* keep aspect ratio */
-  margin: 10px 0;      /* space above/below */
-  border: 2px solid #3d0a0f; /* correct border syntax */
-  border-radius: 8px;
-}
-
-/* project text */
-.project p {
-  text-align: center;
-  margin: 12px 8px 0 8px;
-}
-
-/* smaller screens: stack blobs */
-@media (max-width: 820px) {
-  .project { width: calc(50% - 16px); }  /* two columns */
-}
-@media (max-width: 520px) {
-  .project { width: 100%; }              /* single column */
-}
+/* section headers */
+h2 {
+  color: #9f3e48;
+  border-bottom: 2px
