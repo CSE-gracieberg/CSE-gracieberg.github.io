@@ -1,40 +1,49 @@
+/* kept instructor structure & comments; updated colors to your palette */
+/* small quality-of-life additions: box-sizing and responsive image sizing */
+
+* { box-sizing: border-box; }
+
 body {
-	background: #efe8dc; /* warm beige instead of cornsilk */
-	font-family: Arial, Helvetica, sans-serif;
+    background: #efe8dc;            /* was cornsilk — your warm beige */
+    color: #3d0a0f;                 /* default text color (warm brown) */
+    font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
-	color: #9f3e48; /* rose accent instead of darkslategrey */
-	text-align: center;
+    color: #9f3e48;                 /* was darkslategrey — your rose accent */
+    text-align: center;
 }
 .projects { 
     /* make the blobs float side-by-side */
-	display: flex; 
-	flex-wrap: wrap;  
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 16px;                      /* small spacing improvement */
 } 
 .projects h2 {
     /* display the h2 on its own line, not with the section blobs */
-	width: 100%;
+    width: 100%;
 }
 .project {
     /* form the section blobs */
     width: 30%;
     margin: 10px;
     padding: 20px 10px;
-    background: #f7f1e8; /* lighter cream for blob background */
+    background: #f7f1e8;            /* lighter cream so blobs contrast */
     /* rounded corners for the blobs */
     border-radius: 25%;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.06);
 }
 .project h3 {
     /* pull the h3 text away from the left blob wall */
     margin-left: 50px;
-	color: #9f3e48; /* rose accent headings */
+    color: #9f3e48;
 }
 .project img {
     /* adjust your image sizes as needed */
-    width: 400px;
-    height: 300px;
+    max-width: 400px;               /* keeps the instructor size as maximum */
+    width: 100%;                    /* but makes images responsive */
+    height: auto;
     margin: 10px auto;
-    border: 2px solid #3d0a0f; /* dark warm brown border */
+    border: 2px solid #3d0a0f;      /* navy -> warm brown border */
     display: block;
     /* center the images inside the blobs */
     text-align: center;
@@ -43,5 +52,13 @@ h1 {
     /* center the p text in the blob */
     text-align: center;
     margin: 15px;
-	color: #3d0a0f; /* dark brown text */
+    color: #3d0a0f;
+}
+
+/* Responsive fallbacks so the 30% blobs don't get too small on narrow screens */
+@media (max-width: 900px) {
+  .project { width: calc(50% - 20px); }
+}
+@media (max-width: 520px) {
+  .project { width: 100%; }
 }
