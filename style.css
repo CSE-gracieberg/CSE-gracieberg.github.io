@@ -22,3 +22,21 @@ padding: 20px 10px;
 background: #efe8dc; /* pick a color */
 border-radius: 25%;
 }
+
+.project img{
+width: 300px;
+height: 300px;
+margin: 10px;
+border: 2px solid #3d0a0f; /* choose a color */
+display: block;
+margin: auto;
+}
+
+a { /* change the appearance of ALL links */
+text-decoration: none;
+color: #3d0a0f;
+}
+.project p { /* change the appearance of paragraph tags inside .project divs */
+text-align: center;
+margin: 15px;
+}
