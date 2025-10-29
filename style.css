@@ -1,45 +1,72 @@
+/* reset-ish helpful rule so padding doesn't add to width */
+* { box-sizing: border-box; }
+
 body {
-background: #efe8dc;
-font-family: Arial, Helvetica, sans-serif;
+  background: #efe8dc;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 24px;
+  color: #222;
 }
+
+/* header */
 h1 {
-color: #9f3e48;
-text-align: center;
+  color: #9f3e48;
+  text-align: center;
+  margin-bottom: 12px;
 }
+
+/* layout for project blobs */
 .projects {
-/* make the blobs float side-by-side */
-display:flex;
-flex-wrap:wrap;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;               /* nicer spacing than manual margins */
+  align-items: flex-start;
 }
+
+/* make the h2 take its own line */
 .projects h2 {
-/* display the h2 on its own line, not with the section blobs */
-width: 100%;
+  width: 100%;
+  margin: 0 0 12px 0;
 }
+
+/* each project "blob" */
 .project {
-/* form the section blobs */
-width: 30%;
-margin: 10px;
-padding: 20px 10px;
-background: #efe8dc;
-/* rounded corners for the blobs */
-border-radius: 25%;
+  width: calc(33.333% - 16px);    /* three columns, accounting for gap */
+  background: #ffffff;            /* CONTRAST with body so blobs are visible */
+  margin: 0;
+  padding: 18px;
+  border-radius: 16px;            /* pleasant rounded corners */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.06);
+  min-width: 220px;               /* prevents too-narrow blobs on small screens */
 }
+
+/* title inside each blob */
 .project h3 {
-/* pull the h3 text away from the left blob wall */
-margin-left: 50px;
+  margin: 0 0 8px 0;              /* remove large left offset */
+  font-size: 1.05rem;
 }
+
+/* images: responsive and centered */
 .project img {
-/* adjust your image sizes as needed */
-width: 400px;
-height: 300px;
-margin: 10px auto;
-border: 2px #3d0a0f;
-display: block;
-/* center the images inside the blobs */
-text-align: center;
+  display: block;
+  width: 100%;         /* scale to blob width */
+  height: auto;        /* keep aspect ratio */
+  margin: 10px 0;      /* space above/below */
+  border: 2px solid #3d0a0f; /* correct border syntax */
+  border-radius: 8px;
 }
+
+/* project text */
 .project p {
-/* center the p text in the blob */
-text-align: center;
-margin: 15px;
+  text-align: center;
+  margin: 12px 8px 0 8px;
+}
+
+/* smaller screens: stack blobs */
+@media (max-width: 820px) {
+  .project { width: calc(50% - 16px); }  /* two columns */
+}
+@media (max-width: 520px) {
+  .project { width: 100%; }              /* single column */
 }
