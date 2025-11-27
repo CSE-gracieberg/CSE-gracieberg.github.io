@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 40px;
-    color: #3d0a0f;
+    color: #333;
     background-color: #f9f9f9;
 }
 
@@ -22,7 +22,7 @@ body {
 
 hr {
     border: 0;
-    border-top: 2px solid #3d0a0f;
+    border-top: 2px solid #2c3e50;
     margin: 10px 0 20px 0;
 }
 
