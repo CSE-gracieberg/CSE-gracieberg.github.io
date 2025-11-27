@@ -1,4 +1,4 @@
-/* got help from chatGBT to fix parts of what I had actually work*/
+/* Cleaned and merged stylesheet */
 body {
   background: #efe8dc;
   font-family: Arial, Helvetica, sans-serif;
@@ -12,34 +12,31 @@ h1, h2 {
   margin: 0 0 12px 0;
 }
 
-h2 {
-  font-size: 1.05rem;
-}
+h2 { font-size: 1.05rem; }
 
-.about,
-.skills,
-.contact {
+/* Layout blocks */
+.about, .skills, .contact {
   background: #f7f1e8;
   padding: 20px;
   border-radius: 18px;
   margin: 12px;
 }
 
+/* Projects container */
 .projects {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;        
+  gap: 16px;
   justify-content: center;
   margin: 12px;
 }
 
-.projects h2 {
-  width: 100%;
-}
+.projects h2 { width: 100%; }
 
+/* Project card */
 .project {
   background: #f7f1e8;
-  width: calc(33.333% - 32px); 
+  width: calc(33.333% - 32px);
   min-width: 260px;
   box-sizing: border-box;
   margin: 10px;
@@ -61,7 +58,7 @@ h2 {
   margin: 12px 0 0 0;
 }
 
-
+/* Make images responsive */
 .project img {
   max-width: 100%;
   height: auto;
@@ -70,24 +67,11 @@ h2 {
   display: block;
 }
 
-.contact {
-  
-}
-
+/* Responsive breakpoints */
 @media (max-width: 900px) {
-  .project {
-    width: calc(50% - 32px); 
-  }
+  .project { width: calc(50% - 32px); }
 }
-
 @media (max-width: 600px) {
-  .project {
-    width: 100%; 
-    margin: 8px 0;
-  }
-
-  .about, .skills, .contact {
-    margin: 8px;
-    padding: 16px;
-  }
+  .project { width: 100%; margin: 8px 0; }
+  .about, .skills, .contact { margin: 8px; padding: 16px; }
 }
