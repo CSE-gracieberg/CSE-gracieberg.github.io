@@ -6,6 +6,15 @@ h1 {
 	color: #9f3e48;
 	text-align: center;
 }
+<<<<<<< HEAD
+.projects { display:flex; flex-wrap:wrap; } /* condensed to save space */
+.project {
+width: 30%;
+margin: 10px;
+padding: 20px 10px;
+background: #efe8dc; /* pick a color */
+border-radius: 25%;
+=======
 .about {
     background: #f7f1e8;   
     padding: 15px;
@@ -24,6 +33,7 @@ h1 {
 } 
 .projects h2 {
 	width: 100%;
+>>>>>>> bb8e3992af502ab972d660361eb10fd6c1595077
 }
 .project {
     width: 30%;
