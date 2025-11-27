@@ -1,94 +1,93 @@
+/* got help from chatGBT to fix parts of what I had actually work*/
 body {
-	background: #efe8dc; 
-	font-family: Arial, Helvetica, sans-serif;
-}
-h1 {
-	color: #9f3e48;
-	text-align: center;
-}
-<<<<<<< HEAD
-.projects { display:flex; flex-wrap:wrap; } /* condensed to save space */
-.project {
-width: 30%;
-margin: 10px;
-padding: 20px 10px;
-background: #efe8dc; /* pick a color */
-border-radius: 25%;
-=======
-.about {
-    background: #f7f1e8;   
-    padding: 15px;
-    border-radius: 20px;
+  background: #efe8dc;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.skills {
-    background: #ead4ca;   
-    padding: 15px;
-    border-radius: 20px;
-}
-
-.projects { 
-	display: flex; 
-	flex-wrap: wrap;  
-} 
-.projects h2 {
-	width: 100%;
->>>>>>> bb8e3992af502ab972d660361eb10fd6c1595077
-}
-.project {
-    width: 30%;
-    margin: 10px;
-    padding: 20px 10px;
-    background: #f7f1e8;
-    border-radius: 25%;
-}
-.project h3 {
-   
-    margin-left: 50px;
-	color: #9f3e48; 
-}
-.project img {
-    width: 400px;
-    height: 300px;
-    margin: 10px auto;
-    border: 2px solid #C7A99D; 
-    display: block;
-    text-align: center;
-}
-.project p {
-    text-align: center;
-    margin: 15px;
-	color: #3d0a0f; 
-}
-.contact {
-    background: #f7f1e8;   
-    padding: 15px;
-    border-radius: 20px;
-}
-h2 {
+h1, h2 {
   color: #9f3e48;
-  font-size: 1.05rem;  
-  margin: 0 0 8px 0;
+  text-align: center;
+  margin: 0 0 12px 0;
 }
 
-.about, .skills, .contact {
-  padding: 20px;        
-  border-radius: 18px;  
+h2 {
+  font-size: 1.05rem;
 }
 
+.about,
+.skills,
+.contact {
+  background: #f7f1e8;
+  padding: 20px;
+  border-radius: 18px;
+  margin: 12px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;        
+  justify-content: center;
+  margin: 12px;
+}
+
+.projects h2 {
+  width: 100%;
+}
 
 .project {
-  border-radius: 14px;  
-  padding: 22px 12px;   
+  background: #f7f1e8;
+  width: calc(33.333% - 32px); 
+  min-width: 260px;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 22px 12px;
+  border-radius: 14px;
+  text-align: center;
 }
 
-.about p, .skills p, .contact p, .project p {
+.project h3 {
+  margin: 0 0 8px 0;
+  color: #9f3e48;
+  font-size: 1.05rem;
+}
+
+.project p {
   font-size: 0.95rem;
   color: #3d0a0f;
   line-height: 1.45;
+  margin: 12px 0 0 0;
 }
 
-.project h3 {
-  margin-left: 0;      
-  text-align: center;
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+  border: 2px solid #C7A99D;
+  display: block;
+}
+
+.contact {
+  
+}
+
+@media (max-width: 900px) {
+  .project {
+    width: calc(50% - 32px); 
+  }
+}
+
+@media (max-width: 600px) {
+  .project {
+    width: 100%; 
+    margin: 8px 0;
+  }
+
+  .about, .skills, .contact {
+    margin: 8px;
+    padding: 16px;
+  }
 }
