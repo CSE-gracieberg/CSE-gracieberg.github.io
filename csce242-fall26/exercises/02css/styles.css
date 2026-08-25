@@ -15,7 +15,7 @@ body{
     box-shadow: 5px 5px rgb(75, 122, 40, .5);
 }
 header,main, footer {
-    background-color: rgb(75, 122, 40, .5);
+    background-color: rgb(75, 122, 40, .2);
 
     border-radius: 10px;
 }
