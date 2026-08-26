@@ -1,0 +1,58 @@
+/*structural*/
+body {
+    font-family:cursive, fantasy, georgia, serif;
+    background: url(images/oceanfloor.avif);
+    background-size: cover;
+}
+#d1 {
+    background-color: rgb(12, 161, 187);
+    width: 25%;
+    padding: 50px;
+    margin: auto;
+    border-radius: 100px;
+    border: 25px, ridge, rgb(27, 161, 181, .8)
+}
+#d2 {
+     background-color: rgb(12, 161, 187);
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    border-radius: 25px;
+    border: 15px, ridge, rgb(27, 161, 181, .8)
+
+}
+#d3 {
+    background-color: rgb(241, 249, 250, .4);
+    margin: auto;
+}
+
+/* typography */
+h1,h2{
+    color: rgb(241, 249, 250);
+    text-align: center;
+}
+ #d2 {
+    color: rgb(241, 249, 250);
+ }
+#theme {
+    color: rgb(32, 214, 241);
+    text-align: center;
+    background-color: rgb(13, 101, 115);
+}
+#d3 {
+    text-align: center;
+    color: rgb(13, 101, 115);
+}
+th, td {
+
+  padding: 10px;
+  text-align: auto;
+}
+th {
+    background-color: rgb(32, 214, 241);
+    color: rgb(13, 101, 115);
+}
+td {
+    background-color: rgb(13, 101, 115);
+    color: rgb(32,214,241);
+}
