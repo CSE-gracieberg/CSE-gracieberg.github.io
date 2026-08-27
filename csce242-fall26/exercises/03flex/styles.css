@@ -7,12 +7,27 @@ body {
     width:80%;
     margin: auto;
 }
+#sidebar, #info {
+    padding: 10px;
+}
+#sidebar {
+    background-color: lightpink;
+}
+#info {
+    background-color: plum;
+}
+/*Quick Links*/
+#quick-links {
+    list-style-type: none;
+    padding-left: 0;
+}
+
 /*responsive Design */
 @media (min-width: 1000px) { 
    .columns {
         display: flex;
    }
-   
+
    .one {
     flex:1;
    }
