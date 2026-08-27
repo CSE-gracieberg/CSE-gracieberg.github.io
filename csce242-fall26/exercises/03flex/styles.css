@@ -7,6 +7,11 @@ body {
     width:80%;
     margin: auto;
 }
+
+header {
+    background-color: peachpuff;
+}
+
 #sidebar, #info {
     padding: 10px;
 }
@@ -16,16 +21,30 @@ body {
 #info {
     background-color: plum;
 }
-/*Quick Links*/
-#quick-links {
-    list-style-type: none;
-    padding-left: 0;
+/*Navigation*/
+#main-nav li {
+    background-color: darkslateblue;
+    padding: 5px;
+
 }
+
+#main-nav ul, #quick-links {
+    list-style-type: none;
+    padding-left:0;
+}
+#main-nav a {
+    color: rgb(178, 142, 197);
+    text-decoration: none;
+}
+
 
 /*responsive Design */
 @media (min-width: 1000px) { 
    .columns {
         display: flex;
+   }
+   #main-nav li {
+    flex:1;
    }
 
    .one {
