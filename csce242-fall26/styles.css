@@ -6,7 +6,7 @@ body {
 }
 #assignments {
     background-color:rgb(195, 134, 223, .5);
-    width: 50%;
+    width: 75%;
     padding: 10px;
     margin: auto;
     border-radius: 10xpx;
@@ -15,7 +15,7 @@ body {
 
 #projects {
     background-color:rgb(195, 134, 223, .5);
-    width: 50%;
+    width: 75%;
     padding: 10px;
     margin: auto;
     border-radius: 10xpx;
@@ -31,9 +31,10 @@ footer {
     background-color: rgb(104, 35, 135, .25);
 }
 
+
 /*Typography all purple because its my favorite ! <3 */
 h1 {
-    color: rgb(124, 43, 160);
+    color:rgb(66, 3, 95);
 }
 h2, p  {
     color: rgb(104, 33, 137);
@@ -43,35 +44,58 @@ footer {
 }
 ol {
     color: rgb(226, 196, 239);
+    text-align: center;
 }
 a {
     color: rgb(226, 196, 239);
     text-decoration: none;
 }
 a:hover {
-    color:rgb(170, 83, 209);
+    color:rgb(66, 3, 95);
     text-decoration: none;
 }
 a:visited{
     text-decoration: none;
 }
 
+
+/*Navigation*/
+#alist {
+    list-style-type: none;
+    padding: 5px;
+    text-decoration: none;
+   
+}
+#plist {
+      list-style-type: none;
+    padding: 5px;
+    text-decoration: none;
+
+}
+
 /* Responsive Design*/
-@media (min-width 1000px)
-{
+@media (min-width: 1000px){
+    
     .columns {
         display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
     }
-    #main-nav li {
-    flex:1;
-   }
+.columns li {
+    background-color: rgb(163, 68, 205);
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 0;
+}
 
    .one {
     flex:1;
+    min-width: 250px;
    }
 
    .two {
     flex:2;
+    min-width: 250px;
    }
 
    .three {
@@ -89,5 +113,6 @@ a:visited{
    .six{
     flex:6;
    }
+ 
 }
 
