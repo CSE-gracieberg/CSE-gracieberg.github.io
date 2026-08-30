@@ -34,6 +34,11 @@ header {
 {
     background-color: rgb(240, 204, 210);
 }
+#title1 img, #title2 img, #title3 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 /*typography*/
 
 header {
