@@ -29,6 +29,9 @@ header {
     list-style-type: none;
     padding-left:0;
 }
+#side-links {
+    background-color:rgb(255, 151, 168);
+}
 
 #idea1, #idea2
 {
@@ -65,7 +68,7 @@ h2 {
 }
 #side-links {
     list-style-type: none;
-    color: rgb(255, 151, 168);
+    color: rgb(240,204,210);
     text-align:left;
 }
 p {
