@@ -39,6 +39,10 @@ header {
     height: auto;
     display: block;
 }
+footer {
+    background-color: rgb(240, 204, 210);
+    width: 100%;
+}
 /*typography*/
 
 header {
@@ -52,7 +56,7 @@ h2 {
    color: rgb(28, 68, 22);
 }
 #main-nav a {
-    color: rgb(202, 156, 163);
+    color: rgb(240, 204, 210);
     text-decoration: none;
     list-style-type: none;
 }
@@ -69,6 +73,9 @@ p {
 }
 #id1, #id2 {
    color:  rgb(255, 151, 168);;
+}
+footer {
+    color: rgb(255, 151, 168)
 }
 
 /*responsive Design */
