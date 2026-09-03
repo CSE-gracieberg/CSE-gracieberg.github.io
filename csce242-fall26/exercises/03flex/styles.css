@@ -56,14 +56,9 @@ body {
 
 }
 
-#sidebar, #info {
-    padding: 10px;
-}
-#sidebar {
-    background-color: lightpink;
-}
+
 #info {
-    background-color: plum;
+    background-color: rgb(160, 221, 183);
 }
 
 
@@ -71,12 +66,21 @@ body {
 /*footer links*/
 
 #footer-links-title {
-    background-color: blue;
+   
+    width:fit-content ;
+    margin: 0 auto ;
+    align-items: baseline;
+
 }
+
 #footer-links {
     background-color: maroon;
     color: white;
 
+}
+#footer-links-title h1, #footer-links h2 {
+    margin:0;
+    
 }
 
 /*footer copy*/
@@ -126,6 +130,13 @@ body {
 }
 /*Sidebar*/
 
+#sidebar, #info {
+    padding: 10px;
+}
+#sidebar {
+    background-color: lightpink;
+}
+
 /* columns for all devices */
 .columns-mobile {
     display:flex;
@@ -135,6 +146,9 @@ body {
 @media (min-width: 1000px) { 
    .columns {
         display: flex;
+   }
+   #footer-links-title {
+     margin:0;
    }
    #main-nav li {
     flex:1;
