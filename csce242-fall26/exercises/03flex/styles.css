@@ -7,9 +7,53 @@ body {
     width:80%;
     margin: auto;
 }
-
-header {
+/*header*/
+#mainheader{
     background-color: peachpuff;
+    position: relative;
+    padding-top: 10px;
+}
+
+#logo {
+
+    position: absolute;
+    left: 1em;
+    top:1em;
+
+}
+
+/*hero*/
+
+#hero {
+    position:relative;
+}
+
+#hero_description {
+    position:absolute;
+    top:60%;
+    left: 5%;
+    background-color: rgb(100, 93, 222);
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.hero-arrow {
+    position: absolute;
+    top: 45%;
+    font-size: 8em;
+    color: whitesmoke;
+    text-decoration: none;
+}
+#hero-arrow-right{
+
+    right: 2%;
+    top:22%;
+}
+
+#hero-arrow-left {
+    left:2%;
+    top:22%;
+
 }
 
 #sidebar, #info {
@@ -21,6 +65,27 @@ header {
 #info {
     background-color: plum;
 }
+
+
+
+/*footer links*/
+#footer-links {
+    background: maroon;
+    color: white;
+
+}
+
+/*footer copy*/
+#footer-copy {
+    background: black;
+
+}
+#footer-copy a 
+{
+    color: white;
+}
+
+
 /*Navigation*/
 #main-nav li {
     background-color: darkslateblue;
@@ -28,7 +93,7 @@ header {
 
 }
 
-#main-nav ul, #quick-links {
+#main-nav ul, #quick-links, #login-nav ul {
     list-style-type: none;
     padding-left:0;
 }
@@ -36,6 +101,25 @@ header {
     color: rgb(178, 142, 197);
     text-decoration: none;
 }
+#login-nav {
+    position: absolute;
+    top:2%;
+    right:15%;
+}
+#login-nav li {
+    display: inline-block;
+    
+}
+#login-nav a {
+    color:rgb(199, 102, 17);
+    font-size: 1.5em;
+    text-decoration: none;
+}
+#login-nav li:not( :last-child) :not(:first-child) ::after {
+    content: "|";
+    color: rgb(255, 218, 185);
+}
+/*Sidebar*/
 
 
 /*responsive Design */
