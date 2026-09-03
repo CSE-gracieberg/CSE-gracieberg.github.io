@@ -64,6 +64,30 @@ body {
 
 
 /*footer links*/
+#footer-links header {
+    position: relative;
+}
+#footer-social li {
+    display: inline-block;
+}
+#footer-social {
+       width:fit-content;
+    margin: auto;
+  
+ }
+#footer-social a {
+    list-style-type: none;
+ }
+ #footer-links h3{
+    text-transform: capitalize;
+ }
+ #footer-links .column section{
+    padding: 10px;
+ }
+ #footer-links section ul {
+    
+ }
+
 
 #footer-links-title {
    
@@ -149,6 +173,12 @@ body {
    }
    #footer-links-title {
      margin:0;
+   }
+    #footer-social {
+        position:absolute;
+        top: 5px;
+        right:5px;
+        text-decoration: none;
    }
    #main-nav li {
     flex:1;
