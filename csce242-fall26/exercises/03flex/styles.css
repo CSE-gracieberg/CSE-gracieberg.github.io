@@ -69,15 +69,20 @@ body {
 
 
 /*footer links*/
+
+#footer-links-title {
+    background-color: blue;
+}
 #footer-links {
-    background: maroon;
+    background-color: maroon;
     color: white;
 
 }
 
 /*footer copy*/
 #footer-copy {
-    background: black;
+    background-color: black;
+    color: white;
 
 }
 #footer-copy a 
@@ -121,6 +126,10 @@ body {
 }
 /*Sidebar*/
 
+/* columns for all devices */
+.columns-mobile {
+    display:flex;
+   }
 
 /*responsive Design */
 @media (min-width: 1000px) { 
@@ -130,7 +139,6 @@ body {
    #main-nav li {
     flex:1;
    }
-
    .one {
     flex:1;
    }
