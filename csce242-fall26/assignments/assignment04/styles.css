@@ -26,13 +26,13 @@ body {
     top: 2em;
 }
 #middle-nav {
-    position: absolute;
+    position: relative;
 }
 #erca {
-    width: fit-content;
-    position:relative;
-    left: 60em;
-    top: 10%;
+   background-color: rgb(117, 0, 10);
+    position:absolute;
+    left: 5px;
+    top: 10px;
 }
 /*Navigation*/
 #main-nav li {
@@ -42,12 +42,13 @@ body {
 }
 #main-nav a {
     color:white;
-    font-size: .5em;
+    font-size: small;
     text-decoration: none;
 }
 #main-nav li:not( :last-child) :not(:first-child) ::after {
     content: "|";
-    color: white
+    color: white;
+     
 }
  #main-nav ul{
     list-style-type: none;
@@ -143,6 +144,47 @@ body {
     text-align: left;
     
 }
+/* helpful-links*/
+#helpful-links {
+    background-color: white;
+    padding-top: 25px;
+    margin:auto;
+    padding-left:30px;
+}
+#helpful-links h4{
+    text-align: center;
+    color:rgb(117, 0, 10);
+    font-size: large;
+    text-transform: bold;
+
+}
+/*centers*/
+#centers {
+    position:relative;
+}
+#centers-info {
+    background-color: rgb(117, 0, 10);
+    position: absolute;
+    top:50em;
+    left:2em;
+}
+#centers-info h2, #centers-info p{
+    color:white;
+    text-align:left;
+}
+#centers-info a{
+    position: relative;
+    left: 2px;
+    bottom: 2px;
+    color:white;
+    background-color: black;
+    border-width: 2px;
+    border-style:solid;
+    border-color: white;
+    text-decoration: none;
+    text-align: left;
+    
+}
 /*hero*/
 
 #hero {
@@ -167,6 +209,88 @@ body {
     left:2%;
     top:22%;
 
+}
+/* Stay Connected*/
+#med, #alumni, #resource {
+    background-color:rgb(117, 0, 10);
+    border: 5px;
+    border-color: white;
+    border-style: solid;
+    box-shadow: 2px 2px 2px 2px rgb(125, 124, 124);
+    padding:25px;
+    column-gap: 15px;
+}
+#stay-connected :not( :last-child) :not(:first-child) ::after{
+    content: "|";
+    color: rgb(117, 0, 10);
+   
+}
+#connect-links {
+    list-style: none;
+    text-transform: capitalize;
+    text-align: center;
+    
+}
+#connect-links a {
+    text-decoration: none;
+    color: white;
+   
+    font-weight:bolder;
+}
+#stay-connected {
+    background-color: white;
+}
+#stay-connected h1 {
+    color: rgb(117, 0, 10);
+    text-align: center;
+}
+#stay-connected p{
+    text-align: center;
+}
+
+#connect-social {
+    list-style-type: none;
+    width:fit-content;
+    margin:auto;
+}
+
+#connect-social li {
+    display:inline-block;
+    padding:10px;
+    font-size:24px;
+}
+
+#connect-social a {
+    list-style-type: none; 
+    color: rgb(209, 141, 146);
+    text-decoration: none;
+    
+}
+#connect-social a:hover{
+    color: rgb(117, 0, 10);
+}
+#stay-connected :not( :last-child) :not(:first-child) ::after {
+    content: "|";
+    color: white
+}
+#my-school {
+    background-color: black;
+    border-width: 5px;
+    border-color: white;
+    box-shadow: 2px 2px 2px 2px rgb(125, 124, 124);
+    color:white;
+}
+#quick-links a {
+    color: rgb(117, 0, 10);
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+#quick-links ul {
+    column-width: 200px;
+    column-gap: 10px; 
+    padding-left: 0;
+    list-style-type: none;
 }
 
 
@@ -249,14 +373,26 @@ body {
 
 /*Footer Copy */
 #footer-copy {
-    background: rgb(117, 0, 10);
-    color: white;
+    background: black;
+    
 }
-
+#footer-copy li{
+    list-style: none;
+}
 #footer-copy a {
     color: white;
+    text-decoration: none;
+    font-size: medium;
 }
- 
+#footer-copy li:not( :last-child) :not(:first-child) ::after {
+    content: "|";
+    color: rgb(117, 0, 10);
+}
+     
+ img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* columns for all devices */
 .columns-mobile {
