@@ -97,6 +97,52 @@ body {
     text-align: left;
     
 }
+
+/*Sarah-Quote*/
+
+#sarah-quote {
+    background-color: white;
+   padding: 5px;
+}
+#img-sarah {
+    border-radius: 500px;
+}
+#quote {
+    color: rgb(117, 0, 10);
+    font-size:xx-large;
+
+}
+#sarah-name {
+    color: black;
+
+}
+/*Research*/
+#research {
+    position:relative;
+}
+#research-info {
+    background-color: rgb(117, 0, 10);
+    position: absolute;
+    top:30em;
+    left:2em;
+}
+#research-info h2, #research-info p{
+    color:white;
+    text-align:left;
+}
+#research-info a{
+    position: relative;
+    left: 2px;
+    bottom: 2px;
+    color:white;
+    background-color: black;
+    border-width: 2px;
+    border-style:solid;
+    border-color: white;
+    text-decoration: none;
+    text-align: left;
+    
+}
 /*hero*/
 
 #hero {
