@@ -25,18 +25,7 @@ body {
     right: 2em;
     top: 2em;
 }
-#middle-nav nav {
-    display: flex;
-    justify-content: flex-end;
-}
-#erca {
-    background-color: rgb(117, 0, 10);
-    padding: 10px 5px;
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-   
-}
+
 /*Navigation*/
 #main-nav li {
     text-transform: capitalize;
@@ -56,32 +45,38 @@ body {
     list-style-type: none;
     padding-left:0;
 }
+
+
 #middle-nav li {
-    background-color: rgb(117, 0, 10);
-    padding: 5px;
-   
+  background-color: rgb(117, 0, 10);
+  color: white;             
+  padding: 10px;       
+  width: 100%;   
+  position: relative;
 }
+
+
 #middle-nav ul {
-     list-style-type: none;
-     padding-right:0;
+    list-style-type: none;
+    position: relative;
+    text-align: right;
 }
-#middle-nav a {
-    color: white;
-    text-decoration: none;
-}
+
 #main-nav a, #middle-nav a{
     color: white;
     text-decoration: none;
 }
 /*Education*/
-#education {
-    position:relative;
+#education-tab {
+    position: relative;
 }
 #edu-info {
     background-color: rgb(117, 0, 10);
     position: absolute;
-    top:100em;
-    right:2em;
+    bottom: 2em;
+    right: 2em;
+    padding: 1em 1.5em;
+    max-width: 400px;
 }
 #edu-info h2, #edu-info p{
     color:white;
@@ -106,28 +101,53 @@ body {
 #sarah-quote {
     background-color: white;
    padding: 5px;
+   position: relative;
 }
 #img-sarah {
-    border-radius: 500px;
+    height:300px;
+    max-width: 300px;
+  border-radius: 50%; 
+  
 }
 #quote {
     color: rgb(117, 0, 10);
     font-size:xx-large;
+    margin: auto;
+    padding-top: 45px;
+    position: absolute;
+    
 
 }
 #sarah-name {
     color: black;
 
 }
+#quote-left, #quote-right {
+    max-width:50px;
+    height:50px;
+}
+#quote-left {
+    position: relative;
+   right:75em;
+   top: 15px;
+    
+}
+#quote-right {
+    position: relative;
+    top:10em;
+    right:35em;
+}
 /*Research*/
-#research {
-    position:relative;
+#research-tab {
+    position: relative;
 }
 #research-info {
     background-color: rgb(117, 0, 10);
     position: absolute;
-    top:30em;
-    left:2em;
+    bottom: 2em;
+    right: 2em;
+    padding: 1em 1.5em;
+    max-width: 400px;
 }
 #research-info h2, #research-info p{
     color:white;
@@ -149,27 +169,39 @@ body {
 /* helpful-links*/
 #helpful-links {
     background-color: white;
-    padding-top: 25px;
-    margin:auto;
-    padding-left:30px;
+    padding: 25px 30px;
+    margin: auto;
+    display: flex;
+    column-gap: 20px;
 }
-#helpful-links h4{
+#helpful-links h4 {
     text-align: center;
-    color:rgb(117, 0, 10);
+    color: rgb(117, 0, 10);
     font-size: large;
-    text-transform: bold;
-
+    font-weight: bold;
+}
+#helpful-links p {
+    text-align: center;
+    padding: 0 10px;
+}
+#helpful-links img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
 }
 /*centers*/
-#centers {
-    position:relative;
+#centers-tab {
+    position: relative;
 }
 #centers-info {
     background-color: rgb(117, 0, 10);
     position: absolute;
-    top:50em;
-    left:2em;
+    bottom: 2em;
+    right: 2em;
+    padding: 1em 1.5em;
+    max-width: 400px;
 }
+
 #centers-info h2, #centers-info p{
     color:white;
     text-align:left;
@@ -193,44 +225,47 @@ body {
     position:relative;
 }
 
-
 .hero-arrow {
     position: absolute;
-    top: 45%;
-    font-size: 8em;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3em;
     color: whitesmoke;
     text-decoration: none;
 }
-#hero-arrow-right{
-
+#hero-arrow-right {
     right: 2%;
-    top:22%;
 }
-
 #hero-arrow-left {
-    left:2%;
-    top:22%;
-
+    left: 2%;
+}
+.hero-arrow:hover {
+    color: rgb(117, 0, 10);
 }
 /* Stay Connected*/
 #med, #alumni, #resource {
-    background-color:rgb(117, 0, 10);
+    background-color: rgb(117, 0, 10);
     border: 5px;
     border-color: white;
     border-style: solid;
     box-shadow: 2px 2px 2px 2px rgb(125, 124, 124);
-    padding:25px;
-    column-gap: 15px;
+    padding: 12px 25px;
 }
-#stay-connected li:not(:first-child):not(:last-child)::after {
-    content: "|";
-    color: rgb(117, 0, 10);
-}
+
 #connect-links {
     list-style: none;
     text-transform: capitalize;
     text-align: center;
-    
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+#connect-links li:not(:first-child):not(:last-child)::after {
+    content: "|";
+    color: white;
+}
+#connect-links li {
+    flex: none;
 }
 #connect-links a {
     text-decoration: none;
@@ -274,10 +309,7 @@ body {
     color:rgb(117, 0, 10);
     font-size: larger;
 }
-#stay-connected :not( :last-child) :not(:first-child) ::after {
-    content: "|";
-    color: white
-}
+
 #my-school {
     background-color: black;
     border-width: 5px;
