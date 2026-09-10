@@ -138,6 +138,11 @@ h1, h2, h3 {
 .columns-mobile {
     display:flex;
 }
+/*styles for js*/
+.cool-link {
+    background:#ecc4d2;
+    color: #e93272;
+}
 
 /* Responsive Design */
 
