@@ -12,4 +12,7 @@ document.getElementById("link").onclick = (e) => {
     e.target.classList.add("cool-link");
 }
 
-//ball animatoin
+//when button clicked make ball bounce
+document.getElementById("ball-btn").onclick = (e) => {
+    document.getElementById("ball").classList.toggle("bouncing-ball");
+}
