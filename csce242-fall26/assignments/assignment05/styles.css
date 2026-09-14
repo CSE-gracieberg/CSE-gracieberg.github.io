@@ -22,7 +22,9 @@ header h2 {
 /*squares*/
 #speech-square, #sticker-square, #beverage-square {
     background-color: rgb(242, 240, 213);
-    border-radius: 2px;
+    border-radius: 25px;
+    border-width: 2px;
+    border-style: solid;
     border-color: rgb(93, 135, 140);
     position:relative;
    
@@ -71,7 +73,26 @@ header h2 {
     color: rgb(93, 135, 140);
 }
 /*sticker square*/
+#big-sun {
+    margin:auto;
+    display: block;
+    
 
+}
+#cloud-sticker {
+    display: none;
+    position: absolute;
+    max-width: 150px;
+    max-height: 150px;
+    top: 20px;
+    left: 20px;
+}
+.sticker {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 80px;
+}
 /* columns for all devices */
 .columns-mobile {
     display:flex;

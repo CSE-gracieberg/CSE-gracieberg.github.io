@@ -20,4 +20,8 @@ document.getElementById("beverage-select").addEventListener("change", (e) => {
     } else {
         messageDiv.innerHTML = "";
     }
+    console.log("beverage selected!")
 });
+document.getElementById("big-sun").onclick = (e) => {
+    document.getElementById("cloud-sticker").style.display ="block";
+}
