@@ -14,6 +14,7 @@
     --light-text: #FAF1E8;
     --footer-copy-bg: #C2B7AB;
     --accent-text:#A64F6C;
+    --donation:0%;
 }
 
 body {
@@ -82,6 +83,19 @@ body {
     color:var(--highlight-bg);
 }
 
+/* Navigation */
+#toggle-nav {
+    position:absolute;
+    top:15px;
+    right:15px;
+}
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color:white;
+    margin:6px 0;
+}
+
 /* Page Title */
 #page-title {
     color: var(--headings);
@@ -117,7 +131,6 @@ body {
 .project-card p {
     margin: 0;
     padding: 18px;
-
 }
 
 /* images */
@@ -140,35 +153,21 @@ h1, h2, h3 {
 .columns-mobile {
     display:flex;
 }
-/*styles for js*/
+
+/* Styles for JS */
 .cool-link {
-    background:#ecc4d2;
-    color: #e93272;
+    background:teal;
+    color:magenta;
 }
 
-/*bounce animation*/
-@keyframes bounce{
-    0% {top: 75%; background:red;}
-    10%{background: orange;}
-    25%{background: yellow;}
-    50% {bottom:0%; background: green;}
-    75% {background: blue;}
-    90%{background: purple;}
-
-}
-/*ball*/
 #ball {
     height:50px;
     width:50px;
-    background-color: rgb(102, 0, 128);
-    border-radius: 50%;
+    background-color:#A64F6C;
+    border-radius:50%;
     bottom:75%;
-  
 }
-#btn-ball {
-    background-color: rgb(27, 3, 33);
-    color:rgb(102, 0, 128);
-}
+
 .bouncing-ball {
     animation-name: bounce;
     animation-duration: 1s;
@@ -176,6 +175,32 @@ h1, h2, h3 {
     position:absolute;
 }
 
+/* Bounce Animation */
+@keyframes bounce {
+    0% {bottom:75%; background:red;}
+    25%{background:orange;}
+    50%{background:yellow; bottom:0%;}
+    75%{background:green;}
+}
+
+/* Thermometer */
+#thermometer {
+    width:25%;
+    height:200px;
+    margin-right:10%;
+    border:2px solid turquoise;
+    background:linear-gradient(0deg, rgb(11, 116, 102) 0% var(--donation), white var(--donation) 100%);
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+/* Hiding */
+.hidden {
+    display:none;
+}
+.hide-small {
+    display:flex;
+}
 /* Responsive Design */
 
 /* 600 px or larger */
@@ -198,12 +223,16 @@ h1, h2, h3 {
 
     .project-card {
         margin-bottom:0;
+        min-height:200px;
     }
     
     /* Navigation */
     #main-nav li {
         flex:1;
         border:0;
+    }
+    #toggle-nav {
+        display:none;
     }
 
     /* Columns */
