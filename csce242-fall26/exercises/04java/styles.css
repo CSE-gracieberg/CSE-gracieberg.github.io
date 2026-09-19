@@ -76,7 +76,7 @@ body {
 
 #main-nav a, #login-nav a {
     color: var(--highlight-bg);
-    text-decoration: none;  /* Remover underline */
+    text-decoration: none;
 }
 
 #main-nav a:hover {
@@ -189,7 +189,8 @@ h1, h2, h3 {
     height:200px;
     margin-right:10%;
     border:2px solid turquoise;
-    background:linear-gradient(0deg, rgb(11, 116, 102) 0% var(--donation), white var(--donation) 100%);
+    background:linear-gradient(0deg, rgb(11, 116, 102) 0% var(--donation), rgb(210, 239, 235)
+     var(--donation) 100%);
     margin-left: 25px;
     margin-bottom: 20px;
 }
