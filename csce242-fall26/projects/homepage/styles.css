@@ -137,14 +137,28 @@ body {
 /* Slideshow container */
 .slideshow-container {
   position: relative;
+  width: 500px;
+  height: 500px;
   margin: auto;
-  overflow: hidden;
-  width:500px;
-  clip-path: polygon(50% 0%, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  flex: none;
+  /* no clip-path here anymore */
 }
+
+.star-clip {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  clip-path: polygon(50% 0%, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
+}
+
 /*slideshow*/
+#spotlight {
+    position: relative;
+}
+#spotlight p{
+    position: absolute;
+    right:40px;
+}
 .mySlides {
   display: none;
 }
@@ -160,7 +174,7 @@ body {
   flex: none;
   width: 500px;
   height: 500px;
-  background: #18f832; /* temporary, so i see the shape */
+
 }
 .mySlides img {
   width: 100%;
@@ -170,23 +184,26 @@ body {
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 100%;
+ position: absolute;
+  top: 50%;
   transform: translateY(-50%);
-  width: auto;
+  z-index: 3; /* sit above the star shape */
+  cursor: pointer;
   padding: 16px;
   color: rgb(211, 128, 242);
   font-weight: bold;
   font-size: 18px;
-  background-color: rgb(44, 13, 99, 0.3);
+  background-color: rgb(45, 95, 15, .25);
   border: none;
-  border-radius: 0 3px 3px 0;
   user-select: none;
   transition: 0.3s ease;
 }
 
-/* Position the "next button" to the right */
+
+.prev { 
+    left: 0;
+ }
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -194,7 +211,7 @@ body {
 
 /* Hover effects for buttons */
 .prev:hover, .next:hover {
-  background-color:   rgb(44, 13, 99, 0.8);
+  background-color:   rgba(45, 95, 15, 0.8);
 }
 
 /* Fade animation */
@@ -225,6 +242,7 @@ body {
     background-clip:text;
     color: transparent;
     text-align: center;
+    font-family: "Mansalva";
 }
 #slogan{
    
@@ -233,6 +251,7 @@ body {
 }
 #quote p {
     max-width: 175px;
+    color: rgb(212, 135, 247);
 }
 footer {
     background: linear-gradient(to right, 
@@ -251,6 +270,10 @@ footer a {
 p {
     color:rgb(18, 53, 159);
     padding: 5px;
+}
+#mission {
+    max-width: 500px;
+  
 }
 /*responsive design*/
 
