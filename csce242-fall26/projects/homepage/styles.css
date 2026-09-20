@@ -8,8 +8,26 @@
 /*body*/
 
 body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: rgb(216, 236, 251);
+}
+#home-link{
+    color: rgb(202, 29, 25);
+}
+#tut-link
+{
+    color: rgb(220, 50, 14);
+}
+#contest-link{
+    color: rgb(206, 81, 16);
+}
+#com-link{
+    color:rgb(229, 153, 2)
+}
+#help-link{
+    color:rgb(154, 186, 10)
 }
 
 #top-nav {
@@ -22,16 +40,20 @@ body {
     rgb(171, 249, 157), 
     rgb(168, 176, 250), 
     rgb(212, 135, 247));
-     padding: 10px 0;
+     padding: 20px 0;
 }
 
-h1 {
-    font-family: Mansalva;
-    color: rgba(251, 236, 236, 0.5);
+#top-nav h1 a {
+    font-family: "Mansalva";
+    text-decoration: none;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    font-size: 80px;
+    color: transparent;
+    -webkit-text-stroke: 2px white; /*looked up how to use webkit so that it has the text outline*/
 }
-#top-nav {
-    position:relative;
-}
+
 #top-nav h1 a {
     text-decoration: none;
     position: absolute;
@@ -55,15 +77,18 @@ h1 {
     list-style-type: none;
     padding-left:0;
     margin:0;
+    top: 25px;
 }
 
 #main-nav li {
     background-color: var(--main-nav);
-    padding:16px 5px;
+     padding: 8px 5px;
     border-bottom: 1px solid var(--light-text);
     text-align: center;
     font-size:20px;
     list-style-type: none;
+    font-size: 18px;
+    white-space: nowrap;
 }
 
 #main-nav a, #login-nav a {
@@ -79,7 +104,7 @@ h1 {
 
 .star-wrapper {
   position: relative;
-  width: 470px;
+  width: 500px;
   aspect-ratio: 1;
 }
 
@@ -126,9 +151,12 @@ h1 {
   display: block;
 }
 .slideshow-container {
+  width: 500px;
+  height: 500px;
   position: relative;
   margin: auto;
   overflow: hidden;
+  flex: none;
   width: 500px;
   height: 500px;
   background: #18f832; /* temporary, so i see the shape */
@@ -177,16 +205,22 @@ h1 {
   from { opacity: 0.4; } 
   to { opacity: 1; }
 }
-#mission h3 {
-  background: linear-gradient(to right, 
+#slogan h2, #quote h3, #mission h3, #Welcome h2 {
+    background: linear-gradient(to right, 
     rgb(255, 121, 121), 
     rgb(252, 182, 141), 
     rgb(232, 224, 127), 
     rgb(171, 249, 157), 
     rgb(168, 176, 250), 
     rgb(212, 135, 247));
-  background-clip: text;
-  color: transparent;
+    background-clip:text;
+    color: transparent;
+    text-align: center;
+}
+#slogan{
+   
+    font-size:xx-large;
+    width: 100%;
 }
 
 footer {
@@ -197,6 +231,15 @@ footer {
       rgb(171, 249, 157), 
       rgb(168, 176, 250), 
       rgb(212, 135, 247));
+      color: white;
+}
+footer a {
+    text-decoration: none;
+    
+}
+p {
+    color:rgb(18, 53, 159);
+    padding: 5px;
 }
 /*responsive design*/
 
