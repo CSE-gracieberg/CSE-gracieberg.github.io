@@ -9,9 +9,9 @@
 
 body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(216, 236, 251);
+    margin: 0;
+    padding: 0;
+    background-color: rgb(216, 236, 251);
 }
 #home-link{
     color: rgb(202, 29, 25);
@@ -40,7 +40,7 @@ body {
     rgb(171, 249, 157), 
     rgb(168, 176, 250), 
     rgb(212, 135, 247));
-     padding: 20px 0;
+    padding: 40px 0;
 }
 
 #top-nav h1 a {
@@ -48,7 +48,7 @@ body {
     text-decoration: none;
     position: absolute;
     right: 25px;
-    top: 10px;
+    top: 2px;
     font-size: 80px;
     color: transparent;
     -webkit-text-stroke: 2px white; /*looked up how to use webkit so that it has the text outline*/
@@ -67,6 +67,7 @@ body {
 #top-nav ul{
     position:absolute;
     left: 5px;
+    top:90px;
 }
 
 
@@ -205,6 +206,14 @@ body {
   from { opacity: 0.4; } 
   to { opacity: 1; }
 }
+
+#Welcome p {
+    max-width: 500px;
+    margin:auto;
+    letter-spacing: 2px;
+    padding: 20px;
+    margin-bottom: 24px
+}
 #slogan h2, #quote h3, #mission h3, #Welcome h2 {
     background: linear-gradient(to right, 
     rgb(255, 121, 121), 
@@ -222,7 +231,9 @@ body {
     font-size:xx-large;
     width: 100%;
 }
-
+#quote p {
+    max-width: 175px;
+}
 footer {
     background: linear-gradient(to right, 
       rgb(255, 121, 121), 
@@ -243,13 +254,38 @@ p {
 }
 /*responsive design*/
 
-/* Hiding */
+/* Hiding  THIS IS SO TEDIUOUS WHY DID I DO SO MANY*/
 .hidden {
     display:none;
 }
 .hide-small {
     display:flex;
 }
+
+.deco-star {
+  position: absolute;
+  background: white;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  z-index: 0; /* sits behind your text content */
+}
+
+.star1 { width: 30px; height: 30px; top: 10px; left: 20px; }
+.star2 { width: 20px; height: 20px; top: 60px; left: 200px; transform: rotate(15deg); }
+.star3 { width: 25px; height: 25px; top: 80px; left: 100px; transform: rotate(-10deg); }
+.s4  { width: 50px; height: 50px; top: 20px;  left: 1200px; transform: rotate(-5deg); }
+.s5  { width: 22px; height: 22px; top: 10px;  left: 1050px; transform: rotate(15deg); }
+.s6  { width: 14px; height: 14px; top: 90px;  left: 500px;  transform: rotate(30deg); }
+.s7  { width: 50px; height: 50px; top: 900px; left: 150px; transform: rotate(-18deg); }
+.s8  { width: 20px; height: 20px; top: 60px;  left: 400px; transform: rotate(10deg); }
+.s9  { width: 16px; height: 16px; top: 40px; left: 60px;  transform: rotate(-25deg); }
+.s10 { width: 28px; height: 28px; top: 45px; left: 300px; transform: rotate(5deg); }
+.s11 { width: 18px; height: 18px; top: 25px; left: 880px; transform: rotate(-10deg); }
+.s12 { width: 22px; height: 22px; top: 30px;  left: 450px; transform: rotate(22deg); }
+.s13 { width: 16px; height: 16px; top: 10px; left: 380px; transform: rotate(-15deg); }
+.s14 { width: 24px; height: 24px; top: 99px; left: 750px; transform: rotate(18deg); }
+.s15 { width: 20px; height: 20px; top: 60px; left: 1420px; transform: rotate(-8deg); }
+.s16 { width: 50px; height: 50px; top: 175px; left: 160px; }
+.s17 { width: 50px; height: 50px; top: 175px; left: 550px; }
 @media (min-width: 1000px) {
 
     #content {
