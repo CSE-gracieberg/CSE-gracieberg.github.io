@@ -153,7 +153,19 @@ body {
 
 /*slideshow*/
 #spotlight {
-    position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+  flex-wrap: wrap;
+  color: rgb(212, 135, 247);
+}
+.spotlight-caption {
+  text-align: left;
+  flex: 1;             
+}
+
+.spotlight-caption h3 {
+  margin-bottom: 10px;
 }
 #spotlight p{
     position: absolute;
@@ -178,8 +190,10 @@ body {
 }
 .mySlides img {
   width: 100%;
+  height: 100%;
   display: block;
   object-fit: cover;
+  object-position: center 20%; /* shifts crop upward, toward the top of the image */
 }
 
 /* Next & previous buttons */
@@ -243,6 +257,7 @@ body {
     color: transparent;
     text-align: center;
     font-family: "Mansalva";
+    padding: 15px;
 }
 #slogan{
    
@@ -272,8 +287,14 @@ p {
     padding: 5px;
 }
 #mission {
-    max-width: 500px;
+   
+    text-align: left;
   
+}
+#mission h3 {
+    font-size: larger;
+    
+    
 }
 /*responsive design*/
 
@@ -309,6 +330,9 @@ p {
 .s15 { width: 20px; height: 20px; top: 60px; left: 1420px; transform: rotate(-8deg); }
 .s16 { width: 50px; height: 50px; top: 175px; left: 160px; }
 .s17 { width: 50px; height: 50px; top: 175px; left: 550px; }
+.s18 { width: 50px; height: 50px; top: 875px; left: 900px; }
+.s19 { width: 50px; height: 50px; top: 875px; left: 1090px; }
+
 @media (min-width: 1000px) {
 
     #content {
