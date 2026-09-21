@@ -82,9 +82,7 @@ body {
 }
 
 #main-nav li {
-    background-color: var(--main-nav);
      padding: 8px 5px;
-    border-bottom: 1px solid var(--light-text);
     text-align: center;
     font-size:20px;
     list-style-type: none;
@@ -112,6 +110,7 @@ body {
 .star-wrapper::before {
   content: "";
   position: absolute;
+  top:15px;
   inset: 0;
   background: linear-gradient(to bottom, rgb(255, 121, 121), rgb(252, 182, 141), rgb(232, 224, 127), rgb(171, 249, 157), rgb(168, 176, 250), rgb(212, 135, 247));
   clip-path: polygon(50% 0%, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
@@ -131,18 +130,27 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 60px; /* keeps text from touching the star's angled edges */
+  padding: 0 60px; 
 }
 
 /* Slideshow container */
-.slideshow-container {
+.slideshow-wrapper {
   position: relative;
-  width: 500px;
-  height: 500px;
-  margin: auto;
-  flex: none;
-  /* no clip-path here anymore */
+  width: 600px; 
+  aspect-ratio: 1;
 }
+
+.slideshow-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, 
+    rgb(255, 121, 121), rgb(252, 182, 141), rgb(232, 224, 127), 
+    rgb(171, 249, 157), rgb(168, 176, 250), rgb(212, 135, 247));
+  clip-path: polygon(50% 0%, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
+  z-index: 0;
+}
+
 
 .star-clip {
   width: 100%;
@@ -157,7 +165,11 @@ body {
   align-items: center;
   gap: 5px; 
   flex-wrap: wrap;
-  color: rgb(212, 135, 247);
+ 
+}
+#sptlt-captn{
+     color: rgb(212, 135, 247);
+     padding: 5px;
 }
 .spotlight-caption {
   text-align: left;
@@ -171,6 +183,7 @@ body {
     position: absolute;
     right:40px;
 }
+
 .mySlides {
   display: none;
 }
@@ -178,13 +191,12 @@ body {
   display: block;
 }
 .slideshow-container {
-  width: 500px;
   height: 500px;
   position: relative;
   margin: auto;
   overflow: hidden;
   flex: none;
-  width: 500px;
+  width: auto;
   height: 500px;
 
 }
@@ -328,8 +340,8 @@ p {
 .s13 { width: 16px; height: 16px; top: 10px; left: 380px; transform: rotate(-15deg); }
 .s14 { width: 24px; height: 24px; top: 99px; left: 750px; transform: rotate(18deg); }
 .s15 { width: 20px; height: 20px; top: 60px; left: 1420px; transform: rotate(-8deg); }
-.s16 { width: 50px; height: 50px; top: 175px; left: 160px; }
-.s17 { width: 50px; height: 50px; top: 175px; left: 550px; }
+.s16 { width: 50px; height: 50px; top: 175px; left: 225px; }
+.s17 { width: 50px; height: 50px; top: 175px; left: 650px; }
 .s18 { width: 50px; height: 50px; top: 875px; left: 900px; }
 .s19 { width: 50px; height: 50px; top: 875px; left: 1090px; }
 
