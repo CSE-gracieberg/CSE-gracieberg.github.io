@@ -1,0 +1,239 @@
+/*variable colors*/
+  :root {
+    --primary: rgb(94, 135, 140);
+    --accent: rgb(217, 137, 149);
+    --bg:rgb(241, 242, 233);
+    --card-bg: rgb(255, 255, 255)
+  
+  }
+ /* just learned how to do this and it's so much easier*/
+  
+ 
+  body {
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: var(--bg);
+    color: var(--primary);
+  }
+ /*navigation*/
+  
+  #main-nav h1 {
+    color: var(--primary);
+    text-align: center;
+  }
+  #main-nav h2{
+    color: var(--accent);
+    text-align:center;
+  }
+ 
+ 
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--accent);
+    font-size: 1.5rem;
+ 
+  }
+ 
+  .menu-toggle.open {
+    transform: rotate(180deg);
+  }
+ 
+ .nav-links {
+    display: flex;
+    justify-content: center;  
+    text-align: center;
+    align-items: center;
+    list-style: none;
+}
+ 
+  .nav-links li a {
+    display: inline-block;
+    color: var(--primary);
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    text-align: center;
+}
+ 
+  .nav-links li a:hover {
+    background: var(--primary);
+    color: var(--accent);
+   
+  }
+   .nav-links li:not(:last-child)::after {
+    content: "|";
+    color: var(--accent);
+    align-self: center;
+  }
+ 
+  .nav-links {
+    text-align: center;
+    align-items: center;
+  }
+ 
+  
+ 
+  /*contentt*/
+  main {
+    display: flex;
+   margin:auto;
+   padding: 250px;
+  }
+ 
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    padding: 2rem 2.5rem;
+    width: 100%;
+    max-width: 1000px;
+  }
+ 
+  .card h2 {
+    margin-top: 0;
+    color: var(--primary);
+    text-align: center;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.6rem;
+  }
+ 
+  .hidden {
+    display: none;
+  }
+ 
+  .form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+ 
+  .form-row label {
+    flex: 0 0 auto;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+ 
+  .form-row input {
+    flex: 1 1 auto;
+    padding: 0.5rem 0.6rem;
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+    font-size: 1rem;
+    min-width: 0;
+  }
+ 
+  button.action-btn {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.65rem;
+    background: var(--primary);
+    color: var(--accent);
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+   
+  }
+ 
+  button.action-btn:hover {
+    background: var(--accent);
+    color: var(--primary)
+  }
+ 
+  .result {
+    margin-top: 1.25rem;
+    padding: 1rem;
+    border-radius: 6px;
+    background: #eef2fa;
+    border-left: 4px solid var(--accent);
+    min-height: 1.5rem;
+    line-height: 1.5;
+  }
+ 
+  .result strong {
+    color: var(--primary);
+  }
+
+  /* small screens*/
+  @media (max-width: 700px) {
+    .menu-toggle {
+      display: block;
+    }
+ 
+    .nav-links {
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      background: var(--primary-dark);
+    }
+ 
+    .nav-links.show {
+      max-height: 300px;
+    }
+ 
+    .nav-links li {
+      width: 100%;
+      text-align: center;
+    }
+ 
+    .nav-links li a {
+      padding: 0.9rem 1rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+ 
+    .nav-links li:not(:last-child)::after {
+      content: none;
+    }
+  }
+  /* Responsive Design*/
+@media (min-width: 1000px){
+    
+    .columns {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+.columns li {
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 0;
+}
+.third {
+    flex: 1 1 30%;
+    min-width: 200px;
+}
+
+   .one {
+    flex:1;
+    min-width: 250px;
+   }
+
+   .two {
+    flex:2;
+    min-width: 250px;
+   }
+
+   .three {
+    flex:3;
+   }
+
+   .four {
+    flex:4;
+   }
+
+   .five {
+    flex:5;
+   }
+
+   .six{
+    flex:6;
+   }
+ 
+}
+

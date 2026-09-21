@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>assignment 6</title>
+        <link rel ="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+        
+        <nav id="main-nav">
+            <div>
+                <h1 class="nav-title">Assignment 8</h1>
+                <h2>If Statements</h2>
+                <button class="menu-toggle" id="menuToggle">&#9660;</button>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a id="nav1" href="#">Exercise 1</a></li>
+                <li><a id="nav2" href="#">Exercise 2</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <div class="card" id="ex1Section">
+                <h2>Missing Class Points Deduction</h2>
+                <div class="form-row">
+                <label for="daysMissed">How many days did you miss class?:</label>
+                <input type="number" id="daysMissed" min="0">
+                </div>
+                <button class="action-btn" id="calcAttendance">Calculate</button>
+                <div class="result" id="attendanceResult"></div>
+            </div>
+            
+            <div class="card hidden" id="ex2Section">
+                <h2>End of Semester Counter</h2>
+                Last day of class: <strong>December 4</strong>
+                </p>
+                <button class="action-btn" id="calcDaysLeft">How many days left?</button>
+                <div class="result" id="daysLeftResult"></div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; graciebergmann </p>
+        </footer>
+        <script src="js08.js"></script>
+    </body>
+</html>
