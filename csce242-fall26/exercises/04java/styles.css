@@ -132,6 +132,15 @@ body {
     margin: 0;
     padding: 18px;
 }
+.special {
+    background-color: #97a3f3;
+    padding: 5px;
+    color: pink;
+}
+.error {
+    color: red;
+    font-style: italic;
+}
 
 /* images */
 img {

@@ -344,6 +344,11 @@ p {
 .s17 { width: 50px; height: 50px; top: 175px; left: 650px; }
 .s18 { width: 50px; height: 50px; top: 875px; left: 900px; }
 .s19 { width: 50px; height: 50px; top: 875px; left: 1090px; }
+/* columns for all devices */
+.columns-mobile {
+    display:flex;
+}
+
 
 @media (min-width: 1000px) {
 
