@@ -11,22 +11,56 @@ document.getElementById("btn-loop").onclick = (e) => {
             console.log(`You clicked the ${i}'th element`);
         };
     }
+/*
+     for(let i = 0; i < 10; i++){
+        loopResult.innerHTML += `<p>${i+1}</p>`;
+    }*/
+};
 
+//looping through a range
+document.getElementById("btn-loop-range").onclick = () => {
+    const startNum = parseInt(document.getElementById("txt-start").value);
+    const endNum = parseInt(document.getElementById("txt-end").value);
+    const errorStart = document.getElementById("error-start");
+    errorStart.classList.add("hidden");
+    const errorEnd = document.getElementById("error-end");
+    errorEnd.classList.add("hidden");
+    const ul = document.getElementById("range-list");
 
-    //looping through a range
-    document.getElementById("btn-loop-range").onclick =() => {
+    if(startNum < 0 || startNum > 5){
+        errorStart.innerHTML = "* Invalid";
+        errorStart.classList.remove("hidden");
+        return;
+    }
 
-        console.log("meow");
+    if(endNum < 10 || endNum > 20 || endNum < startNum){
+        errorEnd.innerHTML = "* Invalid";
+        errorEnd.classList.remove("hidden");
+        return;
+    }
 
-        const startText = document.getElementById("txt-start");
-        const endText = document.getElementById("txt-end");
+    ul.innerHTML = "";
 
-        if(isNaN(startText) || startText < 0 || startText >5){
-
-        }
-        
-        if(isNaN(endText) || endText < 10 || endText >20){
-            
-        }
+    for(let i = startNum; i < endNum; i++){
+        const li = document.createElement("li");
+        li.innerHTML = i;
+        ul.appendChild(li);
     }
 };
+
+
+
+//array example 1
+document.getElementById("show-toy-list").onclick = () => {
+    console.log("happy christmas");
+    const toys = ["doll", "skateboard", "RC car", "board game", "DIY kit"];
+    const toyList = document.getElementById("toy-list");
+    toyList.innerHTML ="";
+
+    for(let i=0; i<toys.length; i++) {
+   
+        const p =document.createElement("p");
+             p.innerHTML = toys[i];
+             toyList.append(p);
+    }
+}
