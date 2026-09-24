@@ -48,19 +48,63 @@ document.getElementById("btn-loop-range").onclick = () => {
     }
 };
 
-
-
-//array example 1
-document.getElementById("show-toy-list").onclick = () => {
-    console.log("happy christmas");
-    const toys = ["doll", "skateboard", "RC car", "board game", "DIY kit"];
+//first array example
+document.getElementById("btn-show-toys").onclick = () => {
+    const toys = ["doll", "skate board", "mini car", "board game", "braclets"];
     const toyList = document.getElementById("toy-list");
-    toyList.innerHTML ="";
+    toyList.innerHTML = "";
 
-    for(let i=0; i<toys.length; i++) {
-   
-        const p =document.createElement("p");
-             p.innerHTML = toys[i];
-             toyList.append(p);
+    /*
+    for(let i = 0; i < toys.length; i++){
+        const p = document.createElement("p");
+        p.innerHTML = toys[i];
+        toyList.append(p);
+    }*/
+
+    toys.forEach((toy)=>{
+        const p = document.createElement("p").innerHTML;
+        p.innerHTML = toy;
+        toysList.append(p);
+    });
+};
+
+//show a table of toys and prices
+document.getElementById("btn-show-toy-prices").onclick = () => {
+    const div = document.getElementById("toy-info");
+    div.innerHTML = "";
+    
+    const toyMap = [];
+    toyMap["doll"]= 129.99;
+    toyMap["skate board"] = 200.00;
+    toyMap["mini car"] = 1.99;
+    toyMap["board game"] = 20.99;
+    toyMap["braclettes"] = 19.24;
+
+    const table = document.createElement("table");
+    div.append(table);
+    let tr = document.createElement("tr");
+    table.append(tr);
+    let th = document.createElement("th");
+    tr.append(th);
+    th.innerHTML = "Name";
+    th = document.createElement("th");
+    tr.append(th);
+    th.innerHTML = "Price";
+
+    for(let toy in toyMap) {
+        table.append(createTR(toy, "$" + toyMap[toy])); 
     }
-}
+};
+
+const createTD = (data) => {
+    const td = document.createElement("td");
+    td.innerHTML = data;
+    return td;
+};
+
+    const createTR = (data1, data2)
+    const tr = document.createElement("tr");
+    tr.append(createTD(data1));
+    tr.append(createTD(data2));
+    return tr;
+
