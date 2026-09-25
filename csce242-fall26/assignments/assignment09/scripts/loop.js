@@ -8,24 +8,27 @@ const carColorVars = [
 //create car
 function createCar(topPos, leftPos, bodyColorVar, roofColorVar) {
     const car = document.createElement("div");
-    car.className="car";
-    car.style.top = topPos +"px";
-    car.style.left=leftPos +"px";
-    car.style.setProperty("--car-color3", "car($[bodyColorVar})");
-    car.style.setProperty("--car-color8", "car($[roofColorVar})");
+    car.className = "car";
+    car.style.top = topPos + "px";
+    car.style.left = leftPos + "px";
+    const minGap = 40; 
+    car.style.setProperty("--car-color3", `var(${bodyColorVar})`);
+    car.style.setProperty("--car-color8", `var(${roofColorVar})`);
 
     const body = document.createElement("div");
-    body.className ="car-body";  
+    body.className = "car-body";
     const roof = document.createElement("div");
-    roof.className ="car-roof";  
+    roof.className = "car-roof";
+    const window = document.createElement("div");
+    window.className-"car-window";
     const frontWheel = document.createElement("div");
-    frontWheel.className ="front-wheel";
+    frontWheel.className = "wheel front";
     const backWheel = document.createElement("div");
-    backWheel.className ="back-wheel";
-    car.append(body,roof, window,frontWheel,backWheel)
+    backWheel.className = "wheel back";
+
+    car.append(body, roof, frontWheel, backWheel);
     return car;
 }
-
 function randomInt(min, max) {
     return Math.floor(Math.random() * (max-min +1)) + min;
 }

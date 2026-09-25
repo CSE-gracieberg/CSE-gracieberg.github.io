@@ -1,13 +1,13 @@
-
+/* asked google how to style the cars (top search answer) with help from coding learning websites for stylization*/
 :root {
---car-color1: #2ecc71; 
---car-color2: #8fd13f; 
+--car-color1: #2eccbf; 
+--car-color2: #cad13f; 
 --car-color3: #6c5ce7; 
 --car-color4: #e17055; 
---car-color5: #2d3436; 
+--car-color5: #df67ad; 
 --car-color6: #dff9fb; 
 --car-color7: #c56cf0; 
---car-color8: #3498db; 
+--car-color8: #0f8de1; 
 }
 
 body {
@@ -21,6 +21,7 @@ body {
 /*road*/
 .road-container {
   width: 1650px;
+  max-width: 100vw;
   height: 300px;
 }
 
@@ -99,11 +100,11 @@ body {
   border-radius: 50%;
 }
 
-.wheel.left {
+.wheel.front {
   left: 14px;
 }
 
-.wheel.right {
+.wheel.back {
   right: 14px;
 }
 
