@@ -95,7 +95,7 @@ body {
     white-space: nowrap;
 }
 
-#main-nav a, #login-nav a {
+#main-nav a{
     color: var(--highlight-bg);
     text-decoration: none;  /* Remover underline */
 }

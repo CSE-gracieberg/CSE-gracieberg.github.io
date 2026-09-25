@@ -1,0 +1,189 @@
+/*uploaded fonts*/
+.mansalva-regular {
+  font-family: "Mansalva", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+    --bg: rgb(216, 236, 251);
+    --rainbow:linear-gradient(to right, 
+    rgb(255, 121, 121), 
+    rgb(252, 182, 141), 
+    rgb(232, 224, 127), 
+    rgb(171, 249, 157), 
+    rgb(168, 176, 250), 
+    rgb(212, 135, 247));
+}
+
+/*body*/
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg)
+}
+#home-link{
+    color: rgb(202, 29, 25);
+}
+#tut-link
+{
+    color: rgb(220, 50, 14);
+}
+#contest-link{
+    color: rgb(206, 81, 16);
+}
+#com-link{
+    color:rgb(229, 153, 2)
+}
+#help-link{
+    color:rgb(154, 186, 10)
+}
+
+#top-nav {
+    position: relative;
+    height: 80px;
+    background: var(--rainbow);
+    padding: 40px 0;
+}
+
+#top-nav h1 a {
+    font-family: "Mansalva";
+    text-decoration: none;
+    position: absolute;
+    right: 25px;
+    top: 2px;
+    font-size: 80px;
+    color: transparent;
+    -webkit-text-stroke: 2px white; /*looked up how to use webkit so that it has the text outline*/
+}
+
+#top-nav h1 a {
+    text-decoration: none;
+    position: absolute;
+    right: 25px;
+    color: rgb(250,250,250, .5)
+}
+#top-nav h1 {
+    position: relative;
+    z-index: 2;
+}
+#top-nav ul{
+    position:absolute;
+    left: 5px;
+    top:90px;
+}
+/*stars*/
+.deco-star {
+  position: absolute;
+  background: white;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  z-index: 0; /* sits behind your text content */
+}
+
+.star1 { width: 30px; height: 30px; top: 10px; left: 20px; }
+.star2 { width: 20px; height: 20px; top: 60px; left: 200px; transform: rotate(15deg); }
+.star3 { width: 25px; height: 25px; top: 80px; left: 100px; transform: rotate(-10deg); }
+.s4  { width: 50px; height: 50px; top: 20px;  left: 1200px; transform: rotate(-5deg); }
+.s5  { width: 22px; height: 22px; top: 10px;  left: 1050px; transform: rotate(15deg); }
+.s6  { width: 14px; height: 14px; top: 90px;  left: 500px;  transform: rotate(30deg); }
+.s7  { width: 50px; height: 50px; top: 900px; left: 150px; transform: rotate(-18deg); }
+.s8  { width: 20px; height: 20px; top: 60px;  left: 400px; transform: rotate(10deg); }
+.s9  { width: 16px; height: 16px; top: 40px; left: 60px;  transform: rotate(-25deg); }
+.s10 { width: 28px; height: 28px; top: 45px; left: 300px; transform: rotate(5deg); }
+.s11 { width: 18px; height: 18px; top: 25px; left: 880px; transform: rotate(-10deg); }
+.s12 { width: 22px; height: 22px; top: 30px;  left: 450px; transform: rotate(22deg); }
+.s13 { width: 16px; height: 16px; top: 10px; left: 380px; transform: rotate(-15deg); }
+.s14 { width: 24px; height: 24px; top: 99px; left: 750px; transform: rotate(18deg); }
+.s15 { width: 20px; height: 20px; top: 60px; left: 1420px; transform: rotate(-8deg); }
+
+
+/* Navigation */
+#main-nav ul {
+    position:relative;
+    z-index:2;
+    list-style-type: none;
+    padding-left:0;
+    margin:0;
+    top: 25px;
+}
+
+#main-nav li {
+     padding: 8px 5px;
+    text-align: center;
+    font-size:20px;
+    list-style-type: none;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+#main-nav a{
+    color: var(--highlight-bg);
+    text-decoration: none;  /* Remover underline */
+}
+
+#main-nav a:hover {
+    color:var(--highlight-bg);
+}
+
+/* columns for all devices */
+.columns-mobile {
+    display:flex;
+    flex-wrap: auto;
+}
+
+/*responsive*/
+@media (min-width: 1000px) {
+
+    #content {
+        width:80%;
+        margin:auto;
+    }
+
+    .columns {
+    display:flex;
+    gap:10px;
+    align-items: flex-start;
+}
+
+    .projects {
+        gap: 18px;
+        padding: 20px 0 40px;
+    }
+
+    .project-card {
+        margin-bottom:0;
+    }
+    
+    /* Navigation */
+    #main-nav li {
+        flex:1;
+        border:0;
+    }
+
+    /* Columns */
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    .four {
+        flex:4
+    }
+
+    .five {
+        flex:5;
+    }
+
+    .six {
+        flex:6;
+    }
+}
