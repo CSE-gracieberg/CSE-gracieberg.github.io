@@ -14,6 +14,7 @@
     rgb(171, 249, 157), 
     rgb(168, 176, 250), 
     rgb(212, 135, 247));
+    --accent:rgb(18, 53, 159);
 }
 
 /*body*/
@@ -88,7 +89,7 @@ body {
 .s4  { width: 50px; height: 50px; top: 20px;  left: 1200px; transform: rotate(-5deg); }
 .s5  { width: 22px; height: 22px; top: 10px;  left: 1050px; transform: rotate(15deg); }
 .s6  { width: 14px; height: 14px; top: 90px;  left: 500px;  transform: rotate(30deg); }
-.s7  { width: 50px; height: 50px; top: 900px; left: 150px; transform: rotate(-18deg); }
+.s7  { width: 20px; height: 20px; top: 750px; left: 250px; transform: rotate(-18deg); }
 .s8  { width: 20px; height: 20px; top: 60px;  left: 400px; transform: rotate(10deg); }
 .s9  { width: 16px; height: 16px; top: 40px; left: 60px;  transform: rotate(-25deg); }
 .s10 { width: 28px; height: 28px; top: 45px; left: 300px; transform: rotate(5deg); }
@@ -131,6 +132,39 @@ body {
 .columns-mobile {
     display:flex;
     flex-wrap: auto;
+}
+#tut-title h1{
+    font-family: "mansalva";
+    text-align: center;
+    color: var(--rainbow);
+}
+#tut-title h4 {
+    color:var(--accent);
+    text-align: center;
+}
+/*Painting tutorials*/
+
+#painting-tuts p, #painting-tuts h1 {
+   color:var(--accent);
+   text-align:center;
+}
+
+.level1 {
+    background-color: rgb(255, 169, 171);
+    color: white;
+    text-align: center;
+    padding: 8px;
+
+}
+
+/*footer*/
+footer {
+    background: var(--rainbow);
+      color: white;
+}
+footer a {
+    text-decoration: none;
+    
 }
 
 /*responsive*/

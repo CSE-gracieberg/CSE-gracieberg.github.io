@@ -270,13 +270,7 @@ body {
     margin-bottom: 24px
 }
 #slogan h2, #quote h3, #mission h3, #Welcome h2 {
-    background: linear-gradient(to right, 
-    rgb(255, 121, 121), 
-    rgb(252, 182, 141), 
-    rgb(232, 224, 127), 
-    rgb(171, 249, 157), 
-    rgb(168, 176, 250), 
-    rgb(212, 135, 247));
+    background: var(--rainbow);
     background-clip:text;
     color: transparent;
     text-align: center;
