@@ -19,10 +19,13 @@
 /*body*/
 
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: monospace, Georgia, 'Times New Roman', Times, serif;
     margin: auto;
     padding: 5px;
     background-color: var(--bg)
+}
+h1, h2, h3, p {
+    margin: 0;
 }
 #home-link{
     color: rgb(202, 29, 25);
@@ -265,17 +268,28 @@ body {
 #Welcome p {
     max-width: 700px;
     margin:auto;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     padding: 20px;
     margin-bottom: 24px
 }
-#slogan h2, #quote h3, #mission h3, #Welcome h2 {
+#slogan h2, #quote h3, #mission h1, #Welcome h1 {
     background: var(--rainbow);
     background-clip:text;
+    background-size: auto;
     color: transparent;
-    text-align: center;
+    padding-bottom: 5px;;
+    text-shadow: 10px 10px 20px rgb(18, 53, 159, .25);
     font-family: "Mansalva";
-    padding: 15px;
+    padding: 5px;
+}
+#slogan h2 {
+    background-size: 1000px, 150px;
+}
+#mission h1 {
+    background-size: 500px, 100px;
+}
+#quote h3, #mission h1, #Welcome h1 {
+text-align: center;
 }
 #slogan{
    
@@ -288,7 +302,7 @@ body {
 }
 footer {
     background: var(--rainbow);
-      color: white;
+    color: white;
 }
 footer a {
     text-decoration: none;
@@ -300,14 +314,10 @@ p {
 }
 #mission {
    
-    text-align: left;
+    text-align: center;
   
 }
-#mission h3 {
-    font-size: larger;
-    
-    
-}
+
 /*responsive design*/
 
 /* Hiding  THIS IS SO TEDIUOUS WHY DID I DO SO MANY*/
@@ -340,10 +350,7 @@ p {
 .s13 { width: 16px; height: 16px; top: 10px; left: 380px; transform: rotate(-15deg); }
 .s14 { width: 24px; height: 24px; top: 99px; left: 750px; transform: rotate(18deg); }
 .s15 { width: 20px; height: 20px; top: 60px; left: 1420px; transform: rotate(-8deg); }
-.s16 { width: 50px; height: 50px; top: 175px; left: 225px; }
-.s17 { width: 50px; height: 50px; top: 175px; left: 650px; }
-.s18 { width: 50px; height: 50px; top: 950px; left: 900px; }
-.s19 { width: 50px; height: 50px; top: 950px; left: 1090px; }
+
 /* columns for all devices */
 .columns-mobile {
     display:flex;
