@@ -265,6 +265,18 @@ h1, h2, h3, p {
   to { opacity: 1; }
 }
 
+#splitbar p{
+    padding-top:10px;
+    padding-bottom: 5px;
+    background: var(--rainbow);
+    background-clip:text;
+    background-size: auto;
+    color: transparent;
+    text-align: center;
+    letter-spacing: 50px;
+    font-size:x-large;
+    padding:30px, 30px;
+}
 #Welcome p {
     max-width: 700px;
     margin:auto;
