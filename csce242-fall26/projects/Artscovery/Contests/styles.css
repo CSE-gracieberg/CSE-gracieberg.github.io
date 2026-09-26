@@ -1,0 +1,377 @@
+/*uploaded fonts*/
+.mansalva-regular {
+  font-family: "Mansalva", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+    --bg: rgb(216, 236, 251);
+    --accent:rgb(18, 53, 159);
+    --rainbow:linear-gradient(to right, 
+    rgb(255, 121, 121), 
+    rgb(252, 182, 141), 
+    rgb(232, 224, 127), 
+    rgb(171, 249, 157), 
+    rgb(168, 176, 250), 
+    rgb(212, 135, 247));
+}
+
+/*body*/
+
+body {
+    font-family: monospace, Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+    padding: 5px;
+    background-color: var(--bg)
+}
+h1, h2, h3, p {
+    margin: 0;
+}
+#home-link{
+    color: rgb(202, 29, 25);
+}
+#tut-link
+{
+    color: rgb(220, 50, 14);
+}
+#contest-link{
+    color: rgb(206, 81, 16);
+}
+#com-link{
+    color:rgb(229, 153, 2)
+}
+#help-link{
+    color:rgb(154, 186, 10)
+}
+
+#top-nav {
+    position: relative;
+    height: 80px;
+    background: var(--rainbow);
+    padding: 40px 0;
+}
+
+#top-nav h1 a {
+    font-family: "Mansalva";
+    text-decoration: none;
+    position: absolute;
+    right: 25px;
+    top: 2px;
+    font-size: 80px;
+    color: transparent;
+    -webkit-text-stroke: 2px white; /*looked up how to use webkit so that it has the text outline*/
+}
+
+#top-nav h1 a {
+    text-decoration: none;
+    position: absolute;
+    right: 25px;
+    color: rgb(250,250,250, .5)
+}
+#top-nav h1 {
+    position: relative;
+    z-index: 2;
+}
+#top-nav ul{
+    position:absolute;
+    left: 5px;
+    top:90px;
+}
+
+
+/* Navigation */
+#main-nav ul {
+    position:relative;
+    z-index:2;
+    list-style-type: none;
+    padding-left:0;
+    margin:0;
+    top: 25px;
+}
+
+#main-nav li {
+    padding: 8px 5px;
+    text-align: center;
+    font-size:20px;
+    list-style-type: none;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+#main-nav a{
+    color: var(--highlight-bg);
+    text-decoration: none;  /* Remover underline */
+}
+
+#main-nav a:hover {
+    color:white;
+}
+
+
+
+
+/*responsive design*/
+
+/* Hiding  THIS IS SO TEDIUOUS WHY DID I DO SO MANY*/
+.hidden {
+    display:none;
+}
+.hide-small {
+    display:flex;
+}
+
+.deco-star {
+  position: absolute;
+  background: white;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  z-index: 0; /* sits behind your text content */
+}
+
+.star1 { width: 30px; height: 30px; top: 10px; left: 20px; }
+.star2 { width: 20px; height: 20px; top: 60px; left: 200px; transform: rotate(15deg); }
+.star3 { width: 25px; height: 25px; top: 80px; left: 100px; transform: rotate(-10deg); }
+.s4  { width: 50px; height: 50px; top: 20px;  left: 1200px; transform: rotate(-5deg); }
+.s5  { width: 22px; height: 22px; top: 10px;  left: 1050px; transform: rotate(15deg); }
+.s6  { width: 14px; height: 14px; top: 90px;  left: 500px;  transform: rotate(30deg); }
+.s8  { width: 20px; height: 20px; top: 60px;  left: 400px; transform: rotate(10deg); }
+.s9  { width: 16px; height: 16px; top: 40px; left: 60px;  transform: rotate(-25deg); }
+.s10 { width: 28px; height: 28px; top: 45px; left: 300px; transform: rotate(5deg); }
+.s11 { width: 18px; height: 18px; top: 25px; left: 880px; transform: rotate(-10deg); }
+.s12 { width: 22px; height: 22px; top: 30px;  left: 450px; transform: rotate(22deg); }
+.s13 { width: 16px; height: 16px; top: 10px; left: 380px; transform: rotate(-15deg); }
+.s14 { width: 24px; height: 24px; top: 99px; left: 750px; transform: rotate(18deg); }
+.s15 { width: 20px; height: 20px; top: 60px; left: 1420px; transform: rotate(-8deg); }
+
+/*winner images*/
+#winning-art {
+    align-items: center;
+    position:relative;
+
+}
+#winning-art h4 {
+    text-align: center;
+    color:var(--accent);
+}
+#winning-art img {
+    border-width: 5px;
+    border-style:ridge;
+    border-radius:5px;
+    border-color: white;
+}
+
+#splitbar {
+    background: var(--rainbow);
+    background-clip:text;
+    background-size: auto;
+    color: transparent;
+    text-align: center;
+    letter-spacing: 50px;
+    font-size:x-large;
+    padding:30px, 30px;
+}
+
+/*winners*/
+#winners {
+   
+    box-align: center;
+    position: relative;
+    
+}
+#contest-name {
+    position: absolute;
+    left: 250px;
+    top:5px;
+    width:400px;
+}
+#contest-winners {
+   
+    position: absolute;
+    right: 250px;
+    top:5px;
+}
+#winners h2{
+    text-align: center;
+    color:rgb(212, 135, 247);
+    font-size: x-large;
+
+}
+#winners p{
+    color: var(--accent);
+    font-size: larger;
+}
+/*email list*/
+.star-wrapper {
+  position: relative;
+  width: 500px;
+  aspect-ratio: 1;
+}
+
+.star-wrapper::before {
+  content: "";
+  position: absolute;
+  top:15px;
+  inset: 0;
+  background: var(--rainbow);
+  clip-path: polygon(50% 0%, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
+}
+
+.star {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: white;
+  clip-path: polygon(50% 0%, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 60px; 
+}
+#this-month-contest{
+    position: absolute;
+    right:400px;
+    bottom: 250px;
+}
+#this-month-contest h2{
+  background: var(--rainbow);
+    background-clip:text;
+    background-size: 300px;
+    color: transparent;
+    padding-bottom: 5px;;
+    text-shadow: 10px 10px 20px rgb(18, 53, 159, .25);
+    font-family: "Mansalva";
+    padding: 5px;
+    text-align: left;
+
+}
+
+#this-month-contest p {
+    color: var(--accent);
+    font-size: x-large;
+    text-align: left;
+    max-width: 400px;
+    box-align: center;
+}
+ #submit {
+    padding-top: 100px;
+ }
+#email h3{
+    background: var(--rainbow);
+    background-clip:text;
+    background-size: auto;
+    color: transparent;
+    padding-bottom: 5px;;
+    text-shadow: 10px 10px 20px rgb(18, 53, 159, .25);
+    font-family: "Mansalva";
+    padding: 5px;
+    text-align: center;
+}
+#email p {
+    max-width: 175px;
+    color: rgb(212, 135, 247);
+}
+
+/* columns for all devices */
+.columns-mobile {
+    display:flex;
+    flex-wrap: auto;
+}
+/*title*/
+#contest h1{
+    background: var(--rainbow);
+    background-clip:text;
+    background-size: 300px,100px;
+    color: transparent;
+    padding-bottom: 5px;
+    text-shadow: 10px 10px 20px rgb(18, 53, 159, .25);
+    font-family: "Mansalva";
+    padding: 5px;
+    text-align: center;
+}
+#contest p{
+    color:var(--accent);
+    text-align: center;
+}
+#due {
+    color:var(--accent);
+    text-transform: capitalize;
+    font-size: larger;
+    letter-spacing: 2px;
+    text-align:center ;
+    text-decoration: wavy;
+}
+#submit {
+    position: relative;
+}
+
+
+/*footer*/
+footer {
+    background: var(--rainbow);
+    color: white;
+}
+footer a {
+    text-decoration: none;
+    
+}
+/* columns for all devices */
+.columns-mobile {
+    display:flex;
+    flex-wrap: auto;
+}
+
+@media (min-width: 1000px) {
+
+    
+
+    .columns {
+    display:flex;
+    gap:10px;
+    align-items: center;
+}
+
+    .projects {
+        gap: 18px;
+        padding: 20px 0 40px;
+    }
+
+    .project-card {
+        margin-bottom:0;
+    }
+    
+    /* Navigation */
+    #main-nav li {
+        flex:1;
+        border:0;
+    }
+
+    /* Columns */
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    .four {
+        flex:4
+    }
+
+    .five {
+        flex:5;
+    }
+
+    .six {
+        flex:6;
+    }
+}
