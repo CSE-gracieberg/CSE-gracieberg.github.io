@@ -111,7 +111,6 @@ h1, h2, h3, p {
 
 
 
-/*responsive design*/
 
 /* Hiding  THIS IS SO TEDIUOUS WHY DID I DO SO MANY*/
 .hidden {
@@ -284,6 +283,7 @@ h1, h2, h3, p {
 /*title*/
 #contest h1{
     background: var(--rainbow);
+    text-transform: capitalize;
     background-clip:text;
     background-size: 300px,100px;
     color: transparent;
@@ -293,7 +293,7 @@ h1, h2, h3, p {
     padding: 5px;
     text-align: center;
 }
-#contest p{
+#contest h4{
     color:var(--accent);
     text-align: center;
 }
