@@ -21,9 +21,10 @@
 
 body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg)
+    margin: auto;
+    padding: 5px;
+    background-color: var(--bg);
+    letter-spacing: 3px;
 }
 #home-link{
     color: rgb(202, 29, 25);
@@ -47,6 +48,7 @@ body {
     height: 80px;
     background: var(--rainbow);
     padding: 40px 0;
+    margin: none;
 }
 
 #top-nav h1 a {
@@ -142,20 +144,158 @@ body {
     color:var(--accent);
     text-align: center;
 }
-/*Painting tutorials*/
-
-#painting-tuts p, #painting-tuts h1 {
+#tut-cards h1, #tut-cards p {
    color:var(--accent);
    text-align:center;
 }
+ .txt-star {
+    color: white;
+    font-size: large;
+    text-shadow:2px 2px 4px rgb(255, 255, 255, .2);
+ }
+/*Painting tutorials*/
 
-.level1 {
+
+
+.paintlevel1 {
     background-color: rgb(255, 169, 171);
     color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
     text-align: center;
     padding: 8px;
 
 }
+.paintlevel2 {
+    background-color: rgb(255, 117, 120);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+    text-align: center;
+    padding: 8px;
+
+}
+.paintlevel3 {
+    background-color: rgb(255, 74, 78);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+    text-align: center;
+    padding: 8px;
+
+}
+.paintlevel4 {
+    background-color: rgb(255, 33, 38);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+    text-align: center;
+    padding: 8px;
+
+}
+/*anatomy*/
+.anatomylevel1 {
+    background-color: rgb(255, 224, 192);
+    color: white;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+    text-align: center;
+    padding: 8px;
+}
+.anatomylevel2 {
+    background-color: rgb(255, 198, 138);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+    text-align: center;
+    padding: 8px;
+}
+.anatomylevel3 {
+    background-color:rgb(255, 170, 81);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+    text-align: center;
+    padding: 8px;
+}
+.anatomylevel4 {
+    background-color: rgb(255, 147, 35);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+    text-align: center;
+    padding: 8px;
+}
+/*color theory*/
+.colorlevel1 {
+    background-color: rgb(228, 255, 191);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+    text-align: center;
+    padding: 8px;
+}
+.colorlevel2{
+    background-color: rgb(207, 255, 141);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+    text-align: center;
+    padding: 8px;
+}
+.colorlevel3 {
+    background-color: rgb(180, 255, 77);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+    text-align: center;
+    padding: 8px;
+}
+.colorlevel4 {
+    background-color: rgb(147, 255, 0);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+    text-align: center;
+    padding: 8px;
+}
+/*landscapes*/
+.landlevel1 {
+    background-color:rgb(203, 205, 255);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+    text-align: center;
+    padding: 8px;
+}
+.landlevel2 {
+    background-color: rgb(155, 159, 255);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+    text-align: center;
+    padding: 8px;
+}
+.landlevel3 {
+    background-color:rgb(102, 106, 236);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+    text-align: center;
+    padding: 8px;
+}
+.landlevel4 {
+    background-color: rgb(42, 50, 255);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+     letter-spacing: 2px;
+    text-align: center;
+    padding: 8px;
+}
+
+
+
+
 
 /*footer*/
 footer {
@@ -181,17 +321,10 @@ footer a {
     align-items: flex-start;
 }
 
-    .projects {
-        gap: 18px;
-        padding: 20px 0 40px;
-    }
-
-    .project-card {
-        margin-bottom:0;
-    }
-    
+  
     /* Navigation */
     #main-nav li {
+        
         flex:1;
         border:0;
     }
