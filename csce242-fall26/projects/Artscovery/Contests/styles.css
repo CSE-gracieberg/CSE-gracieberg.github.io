@@ -23,7 +23,8 @@ body {
     font-family: monospace, Georgia, 'Times New Roman', Times, serif;
     margin: auto;
     padding: 5px;
-    background-color: var(--bg)
+    background-color: var(--bg);
+    
 }
 h1, h2, h3, p {
     margin: 0;
@@ -144,19 +145,28 @@ h1, h2, h3, p {
 
 /*winner images*/
 #winning-art {
+    display: flex;
     align-items: center;
-    position:relative;
-
+    position: relative;
 }
 #winning-art h4 {
     text-align: center;
     color:var(--accent);
 }
-#winning-art img {
+.winning-art img {
     border-width: 5px;
     border-style:ridge;
     border-radius:5px;
-    border-color: white;
+    border-color: white; 
+}
+
+.image-card {
+    text-align: center;
+}
+
+.image-card img {
+    display: block;
+    margin: 0 auto;
 }
 
 #splitbar {
