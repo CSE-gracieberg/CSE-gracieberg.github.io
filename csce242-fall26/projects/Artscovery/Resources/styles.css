@@ -224,12 +224,11 @@ footer a {
 
 @media (min-width: 1000px) {
 
-    
-
     .columns {
     display:flex;
     gap:10px;
     align-items: center;
+    flex-wrap:wrap;
 }
 
     .projects {
