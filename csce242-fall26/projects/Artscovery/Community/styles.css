@@ -143,7 +143,60 @@ h1, h2, h3, p {
 .s14 { width: 24px; height: 24px; top: 99px; left: 750px; transform: rotate(18deg); }
 .s15 { width: 20px; height: 20px; top: 60px; left: 1420px; transform: rotate(-8deg); }
 
+#community-title h1{
+    background: var(--rainbow);
+    background-clip:text;
+    background-size: 300px,100px;
+    color: transparent;
+    padding-bottom: 5px;
+    text-shadow: 10px 10px 20px rgb(18, 53, 159, .25);
+    font-family: "Mansalva";
+    padding: 5px;
+    text-align: center;
+}
+#community-title h4 {
+    color:var(--accent);
+    text-align: center;
+}
+#community-title a{
+    text-decoration: none;
+    color:white;
+}
+#community-title a:hover{
+    background: var(--rainbow);
+    background-clip:text;
+    background-size: 100px,100px;
+    color: transparent;
+    padding-bottom: 5px;
+    text-shadow: 10px 10px 20px rgb(18, 53, 159, .25);
+    text-align: center;
+}
+#uploaded-imgs {
+  
+    display: flex;
+    align-items: center;
+    position: relative;
+   
+}
+#uploaded-imgs {
+     text-align: center;
+     color:rgb(212, 135, 247);
+}
+.art-card img {
+    border-width: 5px;
+    border-style:ridge;
+    border-radius:5px;
+    border-color: white;
+    display:flex; 
+    flex-wrap:wrap;
+    width:auto;
+    align-items: center;
+}
 
+
+.art-img {
+    text-align: center;
+}
 
 /*footer*/
 footer {
@@ -165,10 +218,16 @@ footer a {
     
 
     .columns {
-    display:flex;
-    gap:10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     align-items: center;
 }
+.third {
+    flex: 1 1 30%;
+    min-width: 200px;
+}
+
 
     .projects {
         gap: 18px;
