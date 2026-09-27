@@ -144,9 +144,69 @@ h1, h2, h3, p {
 .s15 { width: 20px; height: 20px; top: 60px; left: 1420px; transform: rotate(-8deg); }
 
 
+#resource-title h1{
+    background: var(--rainbow);
+    background-clip:text;
+    background-size: 350px,100px;
+    color: transparent;
+    padding-bottom: 5px;
+    text-shadow: 10px 10px 20px rgb(18, 53, 159, .25);
+    font-family: "Mansalva";
+    padding: 5px;
+    text-align: center;
+}
+#resource-title h4 {
+    color:var(--accent);
+    text-align: center;
+}
+.play-link img:hover{
+    filter: hue-rotate(180deg) saturate(150%) brightness(1.1);
 
+}
 
+.table-colors{
+    border-collapse: collapse;
+    width: 100%;
+    font-family: monospace, Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
+.table-colors th {
+    background-color:rgb(255, 121, 121);
+    color: white;
+    padding: 12px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.table-colors td {
+    padding: 10px;
+    border: 1px solid white;
+    color: white;
+}
+.table-colors tr:nth-child(4n+1) td { background:rgb(255, 121, 121); } 
+.table-colors tr:nth-child(4n+2) td { background: rgb(252, 182, 141); } 
+.table-colors tr:nth-child(4n+3) td { background: rgb(232, 224, 127); } 
+.table-colors tr:nth-child(4n+4) td { background: rgb(171, 249, 157); } 
+.table-colors tr:nth-child(4n+5) td { background: rgb(168, 176, 250); } 
+.table-colors tr:nth-child(4n+6) td { background: rgb(212, 135, 247); } 
+
+.table-colors tr:hover td {
+    filter: saturate(200%);
+    transition: filter 0.2s ease;
+}
+#video-links h1{
+    background: var(--rainbow);
+    background-clip:text;
+    background-size: 225px,100px;
+    color: transparent;
+    padding-bottom: 5px;
+    text-shadow: 10px 10px 20px rgb(18, 53, 159, .25);
+    font-family: "Mansalva";
+    padding: 5px;
+    text-align: center;
+}
 /*footer*/
 footer {
     background: var(--rainbow);
