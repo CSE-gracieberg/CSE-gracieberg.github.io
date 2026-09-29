@@ -8,8 +8,14 @@
 /* Colors used throughout the website */
 :root {
   --bg: rgb(216, 236, 251);
+  --bg-dark: rgb(42, 79, 108);
+  --accent: rgb(18, 53, 159);
+  --highlight: rgb(197, 181, 215);
+
+
   --rainbow: linear-gradient(
     to right,
+
     rgb(255, 121, 121),
     rgb(252, 182, 141),
     rgb(232, 224, 127),
@@ -23,7 +29,7 @@
 body {
   font-family: monospace, Georgia, "Times New Roman", Times, serif;
   margin: auto;
-  padding: 5px;
+  padding: 20px;
   background-color: var(--bg);
 }
 
@@ -334,13 +340,14 @@ p {
   text-align: center;
 }
 
-p {
-  color: rgb(18, 53, 159);
+
+#mission-msg {
+  color:var(--highlight);
   padding: 5px;
 }
-
 /* Footer */
 footer {
+  padding-top: 5px;
   background: var(--rainbow);
   color: white;
 }
@@ -490,7 +497,10 @@ footer a {
   transform: rotate(-8deg);
 }
 
-
+#btm-half {
+  background-color: var(--bg-dark);
+  padding: 20px;
+}
 
 /* columns for all devices */
 .columns-mobile {
