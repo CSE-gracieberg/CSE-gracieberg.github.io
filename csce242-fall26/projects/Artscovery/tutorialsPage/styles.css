@@ -8,6 +8,8 @@
 /* Colors used throughout the website */
 :root {
   --bg: rgb(216, 236, 251);
+  --bg-dark: rgb(42, 79, 108);
+  --highlight: rgb(197, 181, 215);
   --rainbow: linear-gradient(
     to right,
     rgb(255, 121, 121),
@@ -24,7 +26,7 @@
 body {
   font-family: monospace, Georgia, "Times New Roman", Times, serif;
   margin: auto;
-  padding: 5px;
+  padding: 25px;
   background-color: var(--bg);
 }
 
@@ -99,7 +101,7 @@ body {
 #main-nav a {
   text-decoration: none;
   color: inherit;
-    text-shadow: 5px 5px 10px rgb(18, 53, 159, .25);
+    text-shadow: 1px 1px 2px rgb(80, 151, 206, 0.25);
 }
 
 #main-nav a:hover {
@@ -130,17 +132,24 @@ body {
    color:var(--accent);
    text-align:center;
 }
+#tut-cards h1 {
+     box-shadow: 2px 4px rgb(18, 53, 159, .25)
+
+}
+#tut-cards p {
+  max-width: 200px;
+}
+#tut-cards {
+  box-align: center;
+}
  .txt-star {
     color: white;
     font-size: large;
     text-shadow:2px 2px 4px rgb(255, 255, 255, .2);
  }
-/*Painting tutorials*/
-
-
-
-.paintlevel1 {
-    background-color: rgb(255, 169, 171);
+/* tutorials*/
+#paintlevel1, #anatomylevel1, #colorlevel1, #landlevel1{
+    background-color:  rgb(255, 141, 121);
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
      letter-spacing: 2px;
@@ -148,8 +157,8 @@ body {
     padding: 8px;
 
 }
-.paintlevel2 {
-    background-color: rgb(255, 117, 120);
+#paintlevel2 , #colorlevel2, #anatomylevel2, #landlevel2{
+    background-color: rgb(252, 239, 141);
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
      letter-spacing: 2px;
@@ -157,8 +166,8 @@ body {
     padding: 8px;
 
 }
-.paintlevel3 {
-    background-color: rgb(255, 74, 78);
+#paintlevel3, #colorlevel3, #anatomylevel3, #landlevel3 {
+    background-color: rgb(157, 249, 212);
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
      letter-spacing: 2px;
@@ -166,139 +175,51 @@ body {
     padding: 8px;
 
 }
-.paintlevel4 {
-    background-color: rgb(255, 33, 38);
+#paintlevel4, #anatomylevel4, #colorlevel4, #landlevel4 {
+    background-color: rgb(143, 135, 247);
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-     letter-spacing: 2px;
+    letter-spacing: 2px;
     text-align: center;
     padding: 8px;
 
 }
-/*anatomy*/
-.anatomylevel1 {
-    background-color: rgb(255, 224, 192);
-    color: white;
-     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-     letter-spacing: 2px;
-    text-align: center;
-    padding: 8px;
-}
-.anatomylevel2 {
-    background-color: rgb(255, 198, 138);
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-     letter-spacing: 2px;
-    text-align: center;
-    padding: 8px;
-}
-.anatomylevel3 {
-    background-color:rgb(255, 170, 81);
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-     letter-spacing: 2px;
-    text-align: center;
-    padding: 8px;
-}
-.anatomylevel4 {
-    background-color: rgb(255, 147, 35);
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-     letter-spacing: 2px;
-    text-align: center;
-    padding: 8px;
-}
-/*color theory*/
-.colorlevel1 {
-    background-color: rgb(228, 255, 191);
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-     letter-spacing: 2px;
-    text-align: center;
-    padding: 8px;
-}
-.colorlevel2{
-    background-color: rgb(207, 255, 141);
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-     letter-spacing: 2px;
-    text-align: center;
-    padding: 8px;
-}
-.colorlevel3 {
-    background-color: rgb(180, 255, 77);
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-     letter-spacing: 2px;
-    text-align: center;
-    padding: 8px;
-}
-.colorlevel4 {
-    background-color: rgb(147, 255, 0);
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-     letter-spacing: 2px;
-    text-align: center;
-    padding: 8px;
-}
-/*landscapes*/
-.landlevel1 {
-    background-color:rgb(203, 205, 255);
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-     letter-spacing: 2px;
-    text-align: center;
-    padding: 8px;
-}
-.landlevel2 {
-    background-color: rgb(155, 159, 255);
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-     letter-spacing: 2px;
-    text-align: center;
-    padding: 8px;
-}
-.landlevel3 {
-    background-color:rgb(102, 106, 236);
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-     letter-spacing: 2px;
-    text-align: center;
-    padding: 8px;
-}
-.landlevel4 {
-    background-color: rgb(42, 50, 255);
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-     letter-spacing: 2px;
-    text-align: center;
-    padding: 8px;
-}
 
 
+#splitbar p {
+  padding: 30px;
+  background: var(--rainbow);
+  background-clip: text;
+  background-size: auto;
+  color: transparent;
+  text-align: center;
+  letter-spacing: 50px;
+  font-size: x-large;
+}
 
 #other-source a {
       text-decoration: none;
       color: var(--bg);
       padding: 5px;
-      text-align: left;
+      text-align: center;
+
 }
 #other-source a:hover {
-    color: rgb(212, 135, 247);
+    color:var(--highlight);
 }
 #other-source p{
     text-align: center;
 }
 #other-source {
     box-align: center;
-    max-width:450px;
+    max-width:800px;
     align-content: center;
-    background: var(--accent);
+    background: var(--bg-dark);
     color:var(--bg); 
     padding: 5px;   
     margin: auto;
     border-radius: 20px;
-  
+    box-shadow: 2px 2px 4px 4px rgb(42, 79, 108, .25);
 }
 
 /*footer*/
