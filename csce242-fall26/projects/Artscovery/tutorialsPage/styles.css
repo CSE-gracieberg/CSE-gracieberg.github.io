@@ -9,9 +9,13 @@
 :root {
   --bg: rgb(216, 236, 251);
   --bg-dark: rgb(42, 79, 108);
+  --accent: rgb(18, 53, 159);
   --highlight: rgb(197, 181, 215);
+
+
   --rainbow: linear-gradient(
     to right,
+
     rgb(255, 121, 121),
     rgb(252, 182, 141),
     rgb(232, 224, 127),
@@ -19,38 +23,21 @@
     rgb(168, 176, 250),
     rgb(212, 135, 247)
   );
-   --accent: rgb(18, 53, 159);
 }
 
 /* Page basics */
 body {
   font-family: monospace, Georgia, "Times New Roman", Times, serif;
   margin: auto;
-  padding: 25px;
+  padding: 20px;
   background-color: var(--bg);
 }
 
 
 
 /* Navigation link colors */
-#home-link {
-  color: rgb(255, 210, 210);
-}
-
-#tut-link {
-  color: rgb(249, 238, 199);
-}
-
-#contest-link {
-  color: rgb(231, 255, 227);
-}
-
-#com-link {
-  color: rgb(207, 212, 252);
-}
-
-#help-link {
-  color: rgb(233, 201, 247);
+#home-link, #tut-link, #contest-link, #com-link, #help-link {
+  color: white;
 }
 
 /* Top navigation area */
@@ -101,13 +88,13 @@ body {
 #main-nav a {
   text-decoration: none;
   color: inherit;
-    text-shadow: 1px 1px 2px rgb(80, 151, 206, 0.25);
+    text-shadow: 5px 5px 10px rgb(18, 53, 159, .25);
 }
 
 #main-nav a:hover {
-  filter: saturate(100);
+  color: var(--bg-dark);
+  background-color: rgba(255, 255, 255, 0.25);
 }
-
 /* columns for all devices */
 .columns-mobile {
     display:flex;
@@ -128,55 +115,74 @@ body {
     color:var(--accent);
     text-align: center;
 }
-#tut-cards h1, #tut-cards p {
+#tut-cards p {
    color:var(--accent);
    text-align:center;
+     max-width: 200px;
 }
 #tut-cards h1 {
-     box-shadow: 2px 4px rgb(18, 53, 159, .25)
+    color: var(--highlight);
+    background-color: var(--bg-dark);
+    text-align: left;
+    padding: 10px;
 
 }
-#tut-cards p {
-  max-width: 200px;
-}
+
 #tut-cards {
   box-align: center;
 }
- .txt-star {
-    color: white;
-    font-size: large;
-    text-shadow:2px 2px 4px rgb(255, 255, 255, .2);
- }
+#tut-cards  h3:hover {
+  box-shadow: 3px 6px rgb(18, 53, 159, .25);
+}
+.txt-star {
+  color: white;
+  font-size: large;
+  text-shadow:2px 2px 4px rgb(255, 255, 255, .2);
+}
 /* tutorials*/
+
+
 #paintlevel1, #anatomylevel1, #colorlevel1, #landlevel1{
+    align-items: center;
     background-color:  rgb(255, 141, 121);
+    width: 150px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-     letter-spacing: 2px;
+    box-shadow: 2px 4px rgb(18, 53, 159, .25);
+    letter-spacing: 2px;
     text-align: center;
     padding: 8px;
 
 }
 #paintlevel2 , #colorlevel2, #anatomylevel2, #landlevel2{
-    background-color: rgb(252, 239, 141);
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-     letter-spacing: 2px;
-    text-align: center;
-    padding: 8px;
+  align-items: center;
+  background-color: rgb(252, 239, 141);
+  width: 150px;
+  box-shadow: 2px 4px rgb(18, 53, 159, .25);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 8px;
 
 }
 #paintlevel3, #colorlevel3, #anatomylevel3, #landlevel3 {
-    background-color: rgb(157, 249, 212);
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-     letter-spacing: 2px;
-    text-align: center;
-    padding: 8px;
+  align-items: center;
+  background-color: rgb(157, 249, 212);
+  width: 150px;
+  box-shadow: 2px 4px rgb(18, 53, 159, .25);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 8px;
 
 }
 #paintlevel4, #anatomylevel4, #colorlevel4, #landlevel4 {
+    align-items: center;
     background-color: rgb(143, 135, 247);
+    box-shadow: 2px 4px rgb(18, 53, 159, .25);
+    width: 150px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     letter-spacing: 2px;
@@ -198,60 +204,196 @@ body {
 }
 
 #other-source a {
-      text-decoration: none;
-      color: var(--bg);
-      padding: 5px;
-      text-align: center;
+  text-decoration: none;
+  color: var(--bg);
+  padding: 5px;
+  text-align: center;
 
 }
 #other-source a:hover {
-    color:var(--highlight);
+  color:var(--highlight);
 }
 #other-source p{
-    text-align: center;
+  text-align: center;
 }
 #other-source {
-    box-align: center;
-    max-width:800px;
-    align-content: center;
-    background: var(--bg-dark);
-    color:var(--bg); 
-    padding: 5px;   
-    margin: auto;
-    border-radius: 20px;
-    box-shadow: 2px 2px 4px 4px rgb(42, 79, 108, .25);
+  max-width:500px;
+  background: var(--bg-dark);
+  color:var(--bg);
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px 4px rgb(42, 79, 108, .25);
 }
 
 /*footer*/
 footer {
-    background: var(--rainbow);
-      color: white;
-      padding: 5px;
+  background: var(--rainbow);
+  color: white;
+  padding: 5px;
 }
 footer a {
-    text-decoration: none;
-    
+  text-decoration: none;
 }
+
+/* Utility classes */
+.hidden {
+  display: none;
+}
+
+.hide-small {
+  display: flex;
+}
+
+.columns-mobile {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Decorative stars */
+.deco-star {
+  position: absolute;
+  background: white;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  z-index: 0;
+}
+
+.star1 {
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 20px;
+}
+
+.star2 {
+  width: 20px;
+  height: 20px;
+  top: 60px;
+  left: 200px;
+  transform: rotate(15deg);
+}
+
+.star3 {
+  width: 25px;
+  height: 25px;
+  top: 80px;
+  left: 100px;
+  transform: rotate(-10deg);
+}
+
+.s4 {
+  width: 50px;
+  height: 50px;
+  top: 20px;
+  left: 1200px;
+  transform: rotate(-5deg);
+}
+
+.s5 {
+  width: 22px;
+  height: 22px;
+  top: 10px;
+  left: 1050px;
+  transform: rotate(15deg);
+}
+
+.s6 {
+  width: 14px;
+  height: 14px;
+  top: 90px;
+  left: 500px;
+  transform: rotate(30deg);
+}
+
+.s7 {
+  width: 50px;
+  height: 50px;
+  top: 900px;
+  left: 150px;
+  transform: rotate(-18deg);
+}
+
+.s8 {
+  width: 20px;
+  height: 20px;
+  top: 60px;
+  left: 400px;
+  transform: rotate(10deg);
+}
+
+.s9 {
+  width: 16px;
+  height: 16px;
+  top: 40px;
+  left: 60px;
+  transform: rotate(-25deg);
+}
+
+.s10 {
+  width: 28px;
+  height: 28px;
+  top: 45px;
+  left: 300px;
+  transform: rotate(5deg);
+}
+
+.s11 {
+  width: 18px;
+  height: 18px;
+  top: 25px;
+  left: 880px;
+  transform: rotate(-10deg);
+}
+
+.s12 {
+  width: 22px;
+  height: 22px;
+  top: 30px;
+  left: 450px;
+  transform: rotate(22deg);
+}
+
+.s13 {
+  width: 16px;
+  height: 16px;
+  top: 10px;
+  left: 380px;
+  transform: rotate(-15deg);
+}
+
+.s14 {
+  width: 24px;
+  height: 24px;
+  top: 99px;
+  left: 750px;
+  transform: rotate(18deg);
+}
+
+.s15 {
+  width: 20px;
+  height: 20px;
+  top: 60px;
+  left: 1420px;
+  transform: rotate(-8deg);
+}
+
 
 /* Large screens: items with class="columns" sit beside each other had to use ai because i have been trying all week to get the small screen resolution to fix */
 @media (min-width: 1000px) {
-  #content {
+#content {
     width: 80%;
     margin: auto;
-  }
+}
 
-  .columns {
+.columns {
     display: flex;
     gap: 10px;
     align-items: flex-start;
   }
 
-  /* Navigation links become one horizontal row */
   #main-nav {
     display: flex;
   }
 
-  /* Your <hr> lines are hidden on large screens */
   #main-nav hr {
     display: none;
   }
@@ -291,30 +433,5 @@ footer a {
 
   .six {
     flex: 6;
-  }
-}
-
-/* Small screens: only the navigation changes */
-@media (max-width: 999px) {
-  #top-nav {
-    height: 150px;
-  }
-
-  #top-nav h1 a {
-    font-size: 48px;
-    right: 15px;
-  }
-
-  #main-nav {
-    left: 0;
-    right: 0;
-    top: 75px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  #main-nav hr {
-    display: none;
   }
 }

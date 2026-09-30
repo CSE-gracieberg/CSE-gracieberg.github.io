@@ -33,32 +33,11 @@ body {
   background-color: var(--bg);
 }
 
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-}
+
 
 /* Navigation link colors */
-#home-link {
-  color: rgb(255, 210, 210);
-}
-
-#tut-link {
-  color: rgb(249, 238, 199);
-}
-
-#contest-link {
-  color: rgb(231, 255, 227);
-}
-
-#com-link {
-  color: rgb(207, 212, 252);
-}
-
-#help-link {
-  color: rgb(233, 201, 247);
+#home-link, #tut-link, #contest-link, #com-link, #help-link {
+  color: white;
 }
 
 /* Top navigation area */
@@ -113,7 +92,8 @@ p {
 }
 
 #main-nav a:hover {
-  filter: saturate(100);
+  color: var(--bg-dark);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 /* Quote star */
@@ -208,7 +188,7 @@ p {
   margin-bottom: 10px;
 }
 
-#spotlight p {
+#spotlight {
   position: absolute;
   right: 40px;
 }
@@ -295,6 +275,7 @@ p {
   letter-spacing: 2px;
   padding: 20px;
   margin-bottom: 24px;
+  color: var(--accent);
 }
 
 #slogan h2,
@@ -337,16 +318,25 @@ p {
 }
 
 #mission {
+  position:relative;
+}
+#mission  h1{
   text-align: center;
 }
 
 
 #mission-msg {
-  color:var(--highlight);
-  padding: 5px;
+color:var(--highlight);
+text-transform: uppercase; 
+ max-width:500px;
+ text-align: left;
+ position: absolute;
+ right: 175px;
+  
 }
 /* Footer */
 footer {
+  display: gap;
   padding-top: 5px;
   background: var(--rainbow);
   color: white;
