@@ -8,8 +8,14 @@
 /* Colors used throughout the website */
 :root {
   --bg: rgb(216, 236, 251);
+  --bg-dark: rgb(42, 79, 108);
+  --accent: rgb(18, 53, 159);
+  --highlight: rgb(197, 181, 215);
+
+
   --rainbow: linear-gradient(
     to right,
+
     rgb(255, 121, 121),
     rgb(252, 182, 141),
     rgb(232, 224, 127),
@@ -17,43 +23,21 @@
     rgb(168, 176, 250),
     rgb(212, 135, 247)
   );
-   --accent: rgb(18, 53, 159);
 }
 
 /* Page basics */
 body {
   font-family: monospace, Georgia, "Times New Roman", Times, serif;
   margin: auto;
-  padding: 5px;
+  padding: 20px;
   background-color: var(--bg);
 }
 
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-}
+
 
 /* Navigation link colors */
-#home-link {
-  color: rgb(255, 210, 210);
-}
-
-#tut-link {
-  color: rgb(249, 238, 199);
-}
-
-#contest-link {
-  color: rgb(231, 255, 227);
-}
-
-#com-link {
-  color: rgb(207, 212, 252);
-}
-
-#help-link {
-  color: rgb(233, 201, 247);
+#home-link, #tut-link, #contest-link, #com-link, #help-link {
+  color: white;
 }
 
 /* Top navigation area */
@@ -108,33 +92,58 @@ p {
 }
 
 #main-nav a:hover {
-  filter: saturate(100);
+  color: var(--bg-dark);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
+#contest h1{
+    background: var(--rainbow);
+    background-clip:text;
+    background-size: 300px,100px;
+    color: transparent;
+    padding-bottom: 5px;
+    text-shadow: 10px 10px 20px rgb(18, 53, 159, .25);
+    font-family: "Mansalva";
+    padding: 5px;
+    text-align: center;
+}
+#contest h4 {
+    color:var(--accent);
+    text-align: center;
+}
 /*winner images*/
 #winning-art {
-    display: flex;
-    align-items: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
+  
 }
 #winning-art h4 {
-    text-align: center;
-    color:var(--accent);
+  text-align: center;
+  color:var(--highlight);
+  background-color: var(--bg-dark);
+  border-radius: 120px;
+  max-width: 500px;
+  padding: 5px;
+
 }
 .winning-art img {
     border-width: 5px;
     border-style:ridge;
     border-radius:5px;
-    border-color: white; 
+    border-color: white;
 }
 
 .image-card {
+  
     text-align: center;
 }
 
 .image-card img {
     display: block;
     margin: 0 auto;
+    box-shadow: 2px 4px rgb(18, 53, 159, .25);
+
 }
 
 #splitbar {
@@ -157,14 +166,14 @@ p {
 }
 #contest-name {
     position: absolute;
-    left: 250px;
+    left: 300px;
     top:5px;
     width:400px;
 }
 #contest-winners {
    
     position: absolute;
-    right: 250px;
+    right: 300px;
     top:5px;
 }
 #winners h2{
@@ -209,21 +218,23 @@ p {
   text-align: center;
   padding: 0 60px; 
 }
-#this-month-contest{
-    position: absolute;
-    right:400px;
-    bottom: 250px;
+#this-month-contest {
+  position: absolute;
+  top: 1150px;
+  right:100px;
+
 }
+
 #this-month-contest h2{
   background: var(--rainbow);
-    background-clip:text;
-    background-size: 300px;
-    color: transparent;
-    padding-bottom: 5px;;
-    text-shadow: 10px 10px 20px rgb(18, 53, 159, .25);
-    font-family: "Mansalva";
-    padding: 5px;
-    text-align: center;
+  background-clip:text;
+  background-size: 300px;
+  color: transparent;
+  padding-bottom: 5px;;
+  text-shadow: 10px 10px 20px rgb(18, 53, 159, .25);
+  font-family: "Mansalva";
+  padding: 5px;
+  text-align: center;
 
 }
 
@@ -231,7 +242,7 @@ p {
     color: var(--accent);
     font-size: x-large;
     text-align: left;
-    max-width: 400px;
+    
     box-align: center;
 }
  #submit {
@@ -253,134 +264,227 @@ p {
     color: rgb(212, 135, 247);
 }
 
+#due {
+  color:var(--highlight);
+  background-color: var(--bg-dark);
+  text-align: center;
+  border-radius: 120px;
+}
+
+/* Footer */
+footer {
+  display: gap;
+  padding-top: 5px;
+  background: var(--rainbow);
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+/* Utility classes */
+.hidden {
+  display: none;
+}
+
+.hide-small {
+  display: flex;
+}
+
+.columns-mobile {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Decorative stars */
+.deco-star {
+  position: absolute;
+  background: white;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  z-index: 0;
+}
+
+.star1 {
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 20px;
+}
+
+.star2 {
+  width: 20px;
+  height: 20px;
+  top: 60px;
+  left: 200px;
+  transform: rotate(15deg);
+}
+
+.star3 {
+  width: 25px;
+  height: 25px;
+  top: 80px;
+  left: 100px;
+  transform: rotate(-10deg);
+}
+
+.s4 {
+  width: 50px;
+  height: 50px;
+  top: 20px;
+  left: 1200px;
+  transform: rotate(-5deg);
+}
+
+.s5 {
+  width: 22px;
+  height: 22px;
+  top: 10px;
+  left: 1050px;
+  transform: rotate(15deg);
+}
+
+.s6 {
+  width: 14px;
+  height: 14px;
+  top: 90px;
+  left: 500px;
+  transform: rotate(30deg);
+}
+
+.s7 {
+  width: 50px;
+  height: 50px;
+  top: 900px;
+  left: 150px;
+  transform: rotate(-18deg);
+}
+
+.s8 {
+  width: 20px;
+  height: 20px;
+  top: 60px;
+  left: 400px;
+  transform: rotate(10deg);
+}
+
+.s9 {
+  width: 16px;
+  height: 16px;
+  top: 40px;
+  left: 60px;
+  transform: rotate(-25deg);
+}
+
+.s10 {
+  width: 28px;
+  height: 28px;
+  top: 45px;
+  left: 300px;
+  transform: rotate(5deg);
+}
+
+.s11 {
+  width: 18px;
+  height: 18px;
+  top: 25px;
+  left: 880px;
+  transform: rotate(-10deg);
+}
+
+.s12 {
+  width: 22px;
+  height: 22px;
+  top: 30px;
+  left: 450px;
+  transform: rotate(22deg);
+}
+
+.s13 {
+  width: 16px;
+  height: 16px;
+  top: 10px;
+  left: 380px;
+  transform: rotate(-15deg);
+}
+
+.s14 {
+  width: 24px;
+  height: 24px;
+  top: 99px;
+  left: 750px;
+  transform: rotate(18deg);
+}
+
+.s15 {
+  width: 20px;
+  height: 20px;
+  top: 60px;
+  left: 1420px;
+  transform: rotate(-8deg);
+}
+
+#btm-half {
+  background-color: var(--bg-dark);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 10px rgb(18, 53, 159, .25)
+}
+
 /* columns for all devices */
 .columns-mobile {
     display:flex;
-    flex-wrap: auto;
-}
-/*title*/
-#contest h1{
-    background: var(--rainbow);
-    text-transform: capitalize;
-    background-clip:text;
-    background-size: 300px,100px;
-    color: transparent;
-    padding-bottom: 5px;
-    text-shadow: 10px 10px 20px rgb(18, 53, 159, .25);
-    font-family: "Mansalva";
-    padding: 5px;
-    text-align: center;
-}
-#contest h4{
-    color:var(--accent);
-    text-align: center;
-}
-#due {
-    color:var(--accent);
-    text-transform: capitalize;
-    font-size: larger;
-    letter-spacing: 2px;
-    text-align:center ;
-    text-decoration: wavy;
-}
-#submit {
-    position: relative;
 }
 
-
-/*footer*/
-footer {
-    background: var(--rainbow);
-    color: white;
-}
-footer a {
-    text-decoration: none;
-    
-}
-/* columns for all devices */
-
-/* Large screens: items with class="columns" sit beside each other had to use ai because i have been trying all week to get the small screen resolution to fix */
 @media (min-width: 1000px) {
-  #content {
-    width: 80%;
-    margin: auto;
-  }
+    /* Structure */
+    #content {
+        width:80%;
+        margin:auto;
+    }
 
-  .columns {
-    display: flex;
-    gap: 10px;
-    align-items: flex-start;
-  }
+    .columns {
+        display:flex;
+    }
 
-  /* Navigation links become one horizontal row */
-  #main-nav {
-    display: flex;
-  }
+   /* Navigation */
+    #main-nav li {
+        flex:1;
+        border:0;
+    }
+     /* Footer */
+    #footer-links-title {
+        margin:0;
+    }
 
-  /* Your <hr> lines are hidden on large screens */
-  #main-nav hr {
-    display: none;
-  }
+    #footer-social {
+        position:absolute;
+        top:5px;
+        right:5px;
+    }
 
-  #main-nav li {
-    flex: 1;
-  }
+    /* Columns */
+    .one {
+        flex:1;
+    }
 
-  .projects {
-    gap: 18px;
-    padding: 20px 0 40px;
-  }
+    .two {
+        flex:2;
+    }
 
-  .project-card {
-    margin-bottom: 0;
-  }
+    .three {
+        flex:3;
+    }
 
-  .one {
-    flex: 1;
-  }
+    .four {
+        flex:4
+    }
 
-  .two {
-    flex: 2;
-  }
+    .five {
+        flex:5;
+    }
 
-  .three {
-    flex: 3;
-  }
-
-  .four {
-    flex: 4;
-  }
-
-  .five {
-    flex: 5;
-  }
-
-  .six {
-    flex: 6;
-  }
-}
-
-/* Small screens: only the navigation changes */
-@media (max-width: 999px) {
-  #top-nav {
-    height: 150px;
-  }
-
-  #top-nav h1 a {
-    font-size: 48px;
-    right: 15px;
-  }
-
-  #main-nav {
-    left: 0;
-    right: 0;
-    top: 75px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  #main-nav hr {
-    display: none;
-  }
+    .six {
+        flex:6;
+    }
 }

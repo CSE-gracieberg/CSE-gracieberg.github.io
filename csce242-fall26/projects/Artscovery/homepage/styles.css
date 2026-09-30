@@ -88,7 +88,7 @@ body {
 #main-nav a {
   text-decoration: none;
   color: inherit;
-    text-shadow: 5px 5px 10px rgb(18, 53, 159, .25);
+  text-shadow: 5px 5px 10px rgb(18, 53, 159, .25);
 }
 
 #main-nav a:hover {

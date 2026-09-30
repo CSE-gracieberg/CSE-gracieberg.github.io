@@ -116,15 +116,16 @@ body {
     text-align: center;
 }
 #tut-cards p {
-   color:var(--accent);
-   text-align:center;
-     max-width: 200px;
+  color:var(--accent);
+  text-align:center;
+  max-width: 200px;
 }
 #tut-cards h1 {
     color: var(--highlight);
     background-color: var(--bg-dark);
     text-align: left;
     padding: 10px;
+    border-radius: 120px;
 
 }
 
