@@ -102,6 +102,8 @@ body {
     background-size: 300px,100px;
     color: transparent;
     padding-bottom: 5px;
+      -webkit-text-stroke: .2px white;
+
     text-shadow: 10px 10px 20px rgb(18, 53, 159, .25);
     font-family: "Mansalva";
     padding: 5px;
@@ -159,31 +161,38 @@ body {
 
 /*winners*/
 #winners {
-   
     box-align: center;
     position: relative;
+  
     
 }
 #contest-name {
-    position: absolute;
-    left: 300px;
-    top:5px;
-    width:400px;
+  background-color: rgb(42, 79, 108);
+  padding: 8px;
+  height: 250px;
+  border-radius: 50px;
+  position: absolute;
+  left: 320px;
+  top:5px;
+  width:400px;
 }
 #contest-winners {
-   
-    position: absolute;
-    right: 300px;
-    top:5px;
+  background-color: rgb(42, 79, 108);
+  padding: 8px;
+  height: 250px;
+  border-radius: 50px;
+  position: absolute;
+  right: 320px;
+  top:5px;
 }
 #winners h2{
     text-align: center;
-    color:rgb(212, 135, 247);
+    color:var(--highlight);
     font-size: x-large;
 
 }
 #winners p{
-    color: var(--accent);
+    color: var(--bg);
     font-size: larger;
 }
 /*email list*/
@@ -230,6 +239,7 @@ body {
   background-clip:text;
   background-size: 300px;
   color: transparent;
+  -webkit-text-stroke: .2px white;
   padding-bottom: 5px;;
   text-shadow: 10px 10px 20px rgb(18, 53, 159, .25);
   font-family: "Mansalva";
@@ -270,6 +280,7 @@ body {
   text-align: center;
   border-radius: 120px;
 }
+
 
 /* Footer */
 footer {

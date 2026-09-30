@@ -279,14 +279,25 @@ body {
 }
 
 #slogan h2,
-#quote h3,
 #mission h1,
 #Welcome h1 {
   background: var(--rainbow);
   background-clip: text;
   background-size: auto;
   color: transparent;
+  -webkit-text-stroke: .2px white;
   padding-bottom: 5px;
+  text-shadow: 10px 10px 20px rgb(18, 53, 159, 0.25);
+  font-family: "Mansalva";
+  padding: 5px;
+}
+
+ #quote h3{
+  background: var(--rainbow);
+  background-clip: text;
+  background-size: auto;
+  color: transparent;
+  padding: 10px;
   text-shadow: 10px 10px 20px rgb(18, 53, 159, 0.25);
   font-family: "Mansalva";
   padding: 5px;
