@@ -8,8 +8,14 @@
 /* Colors used throughout the website */
 :root {
   --bg: rgb(216, 236, 251);
+  --bg-dark: rgb(42, 79, 108);
+  --accent: rgb(18, 53, 159);
+  --highlight: rgb(197, 181, 215);
+
+
   --rainbow: linear-gradient(
     to right,
+
     rgb(255, 121, 121),
     rgb(252, 182, 141),
     rgb(232, 224, 127),
@@ -17,43 +23,21 @@
     rgb(168, 176, 250),
     rgb(212, 135, 247)
   );
-   --accent: rgb(18, 53, 159);
 }
 
 /* Page basics */
 body {
-  font-family: monospace, Georgia, "Times New Roman", Times, serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: auto;
-  padding: 5px;
+  padding: 20px;
   background-color: var(--bg);
 }
 
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-}
+
 
 /* Navigation link colors */
-#home-link {
-  color: rgb(255, 210, 210);
-}
-
-#tut-link {
-  color: rgb(249, 238, 199);
-}
-
-#contest-link {
-  color: rgb(231, 255, 227);
-}
-
-#com-link {
-  color: rgb(207, 212, 252);
-}
-
-#help-link {
-  color: rgb(233, 201, 247);
+#home-link, #tut-link, #contest-link, #com-link, #help-link {
+  color: white;
 }
 
 /* Top navigation area */
@@ -108,8 +92,10 @@ p {
 }
 
 #main-nav a:hover {
-  filter: saturate(100);
+  color: var(--bg-dark);
+  background-color: rgba(255, 255, 255, 0.25);
 }
+
 
 #community-title h1{
     background: var(--rainbow);
@@ -192,6 +178,127 @@ footer a {
     text-decoration: none;
     
 }
+
+/* Decorative stars */
+.deco-star {
+  position: absolute;
+  background: white;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  z-index: 0;
+}
+
+.star1 {
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 20px;
+}
+
+.star2 {
+  width: 20px;
+  height: 20px;
+  top: 60px;
+  left: 200px;
+  transform: rotate(15deg);
+}
+
+.star3 {
+  width: 25px;
+  height: 25px;
+  top: 80px;
+  left: 100px;
+  transform: rotate(-10deg);
+}
+
+.s4 {
+  width: 50px;
+  height: 50px;
+  top: 20px;
+  left: 1200px;
+  transform: rotate(-5deg);
+}
+
+.s5 {
+  width: 22px;
+  height: 22px;
+  top: 10px;
+  left: 1050px;
+  transform: rotate(15deg);
+}
+
+.s6 {
+  width: 14px;
+  height: 14px;
+  top: 90px;
+  left: 500px;
+  transform: rotate(30deg);
+}
+
+
+.s8 {
+  width: 20px;
+  height: 20px;
+  top: 60px;
+  left: 400px;
+  transform: rotate(10deg);
+}
+
+.s9 {
+  width: 16px;
+  height: 16px;
+  top: 40px;
+  left: 60px;
+  transform: rotate(-25deg);
+}
+
+.s10 {
+  width: 28px;
+  height: 28px;
+  top: 45px;
+  left: 300px;
+  transform: rotate(5deg);
+}
+
+.s11 {
+  width: 18px;
+  height: 18px;
+  top: 25px;
+  left: 880px;
+  transform: rotate(-10deg);
+}
+
+.s12 {
+  width: 22px;
+  height: 22px;
+  top: 30px;
+  left: 450px;
+  transform: rotate(22deg);
+}
+
+.s13 {
+  width: 16px;
+  height: 16px;
+  top: 10px;
+  left: 380px;
+  transform: rotate(-15deg);
+}
+
+.s14 {
+  width: 24px;
+  height: 24px;
+  top: 99px;
+  left: 750px;
+  transform: rotate(18deg);
+}
+
+.s15 {
+  width: 20px;
+  height: 20px;
+  top: 60px;
+  left: 1420px;
+  transform: rotate(-8deg);
+}
+
 /* columns for all devices */
 .columns-mobile {
     display:flex;
