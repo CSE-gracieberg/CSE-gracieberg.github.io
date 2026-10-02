@@ -40,6 +40,8 @@ class Dog {
         ul.append(this.liInfo("Size", this.size));
         ul.append(this.liInfo("Age", this.age));
 
+        const moreInfo = section.querySelector("more-info");
+
         return ul;
     }
 
