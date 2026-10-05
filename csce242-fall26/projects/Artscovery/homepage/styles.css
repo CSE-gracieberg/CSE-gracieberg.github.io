@@ -175,6 +175,7 @@ body {
   color: rgb(212, 135, 247);
   padding: 5px;
   position: absolute;
+  background-color: rgb(42, 79, 108, .5);
   top: 150px;
   right: 60px;
 }
