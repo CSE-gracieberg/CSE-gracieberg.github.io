@@ -238,9 +238,7 @@ footer a {
 }
 
 /* Utility classes */
-.hidden {
-  display: none;
-}
+
 
 .hide-small {
   display: flex;
@@ -378,62 +376,148 @@ footer a {
   transform: rotate(-8deg);
 }
 
-
-/* Large screens: items with class="columns" sit beside each other had to use ai because i have been trying all week to get the small screen resolution to fix */
-@media (min-width: 1000px) {
-#content {
-    width: 80%;
-    margin: auto;
+#btm-half {
+  background-color: var(--bg-dark);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 10px rgb(18, 53, 159, .25)
 }
 
-.columns {
-    display: flex;
-    gap: 10px;
-    align-items: flex-start;
-  }
+/* columns for all devices */
+.columns-mobile {
+    display:flex;
+}
 
-  #main-nav {
-    display: flex;
-  }
+@media (min-width: 1000px) {
+    /* Structure */
+    #content {
+        width:80%;
+        margin:auto;
+    }
 
-  #main-nav hr {
+    .columns {
+        display:flex;
+    }
+
+   /* Navigation */
+    #main-nav li {
+        flex:1;
+        border:0;
+    }
+     /* Footer */
+    #footer-links-title {
+        margin:0;
+    }
+
+    #footer-social {
+        position:absolute;
+        top:5px;
+        right:5px;
+    }
+
+    /* Columns */
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    .four {
+        flex:4
+    }
+
+    .five {
+        flex:5;
+    }
+
+    .six {
+        flex:6;
+    }
+}
+#toggle-nav {
     display: none;
-  }
+}
 
-  #main-nav li {
-    flex: 1;
-  }
+@media (max-width: 999px) {
+    #top-nav {
+        height: auto;
+        padding: 10px 0;
+        overflow: hidden;
+    }
 
-  .projects {
-    gap: 18px;
-    padding: 20px 0 40px;
-  }
+    #top-nav h1 {
+        text-align: center;
+        margin: 0;
+    }
 
-  .project-card {
-    margin-bottom: 0;
-  }
+    #top-nav h1 a {
+        position: static;
+        font-size: 48px;
+    }
 
-  .one {
-    flex: 1;
-  }
+    #toggle-nav {
+        display: block;
+        position: relative;
+        z-index: 2;
+        margin: 10px auto;
+        padding: 8px 16px;
+        font-size: 18px;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.4);
+        color: var(--bg-dark);
+        border: none;
+        border-radius: 5px;
+    }
 
-  .two {
-    flex: 2;
-  }
+    #main-nav {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-  .three {
-    flex: 3;
-  }
+    #main-nav.hidden {
+        display: none;
+    }
 
-  .four {
-    flex: 4;
-  }
+    #main-nav hr {
+        display: none;
+    }
 
-  .five {
-    flex: 5;
-  }
+    .slideshow-wrapper {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        aspect-ratio: 1;
+        margin: 0 auto;
+    }
 
-  .six {
-    flex: 6;
-  }
+    #sptlt-captn {
+        position: static;
+        text-align: center;
+    }
+
+    .star-wrapper {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    #mission-msg {
+        position: static;
+        max-width: 100%;
+    }
+
+    #splitbar p {
+        letter-spacing: 8px;
+        font-size: large;
+        padding: 10px;
+        word-break: break-all;
+    }
 }
