@@ -1,5 +1,5 @@
 const getResources = async () => {
-    const url = "../resources.json";
+    const url = "../json/resources.json";
 
     try {
         const response = await fetch(url);
