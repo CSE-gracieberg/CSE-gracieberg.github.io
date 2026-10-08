@@ -198,7 +198,7 @@ body {
 /*email list*/
 .star-wrapper {
   position: relative;
-  width: 500px;
+  width: 650px;
   aspect-ratio: 1;
 }
 
@@ -213,10 +213,10 @@ body {
 
 .star {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
   background: white;
   clip-path: polygon(50% 0%, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
   
@@ -243,6 +243,7 @@ body {
   padding-bottom: 5px;;
   text-shadow: 10px 10px 20px rgb(18, 53, 159, .25);
   font-family: "Mansalva";
+  font-size: 50px;
   padding: 5px;
   text-align: center;
 
@@ -251,27 +252,35 @@ body {
 #this-month-contest p {
     color: var(--accent);
     font-size: x-large;
-    text-align: left;
+    text-align: center;
     
     box-align: center;
 }
  #submit {
     padding-top: 100px;
  }
+ #email {
+   margin: 0 0 4px 0;  
+ }
 #email h3{
     background: var(--rainbow);
     background-clip:text;
     background-size: auto;
     color: transparent;
-    padding-bottom: 5px;;
+    padding-bottom: .2px;;
     text-shadow: 10px 10px 20px rgb(18, 53, 159, .25);
     font-family: "Mansalva";
-    padding: 5px;
+    padding: .5px;
     text-align: center;
 }
 #email p {
     max-width: 175px;
+    margin: 2px 0;
     color: rgb(212, 135, 247);
+}
+#email input {
+  box-align: center;
+  align-items: center;
 }
 
 #due {
@@ -316,125 +325,6 @@ footer a {
   z-index: 0;
 }
 
-.star1 {
-  width: 30px;
-  height: 30px;
-  top: 10px;
-  left: 20px;
-}
-
-.star2 {
-  width: 20px;
-  height: 20px;
-  top: 60px;
-  left: 200px;
-  transform: rotate(15deg);
-}
-
-.star3 {
-  width: 25px;
-  height: 25px;
-  top: 80px;
-  left: 100px;
-  transform: rotate(-10deg);
-}
-
-.s4 {
-  width: 50px;
-  height: 50px;
-  top: 20px;
-  left: 1200px;
-  transform: rotate(-5deg);
-}
-
-.s5 {
-  width: 22px;
-  height: 22px;
-  top: 10px;
-  left: 1050px;
-  transform: rotate(15deg);
-}
-
-.s6 {
-  width: 14px;
-  height: 14px;
-  top: 90px;
-  left: 500px;
-  transform: rotate(30deg);
-}
-
-.s7 {
-  width: 50px;
-  height: 50px;
-  top: 900px;
-  left: 150px;
-  transform: rotate(-18deg);
-}
-
-.s8 {
-  width: 20px;
-  height: 20px;
-  top: 60px;
-  left: 400px;
-  transform: rotate(10deg);
-}
-
-.s9 {
-  width: 16px;
-  height: 16px;
-  top: 40px;
-  left: 60px;
-  transform: rotate(-25deg);
-}
-
-.s10 {
-  width: 28px;
-  height: 28px;
-  top: 45px;
-  left: 300px;
-  transform: rotate(5deg);
-}
-
-.s11 {
-  width: 18px;
-  height: 18px;
-  top: 25px;
-  left: 880px;
-  transform: rotate(-10deg);
-}
-
-.s12 {
-  width: 22px;
-  height: 22px;
-  top: 30px;
-  left: 450px;
-  transform: rotate(22deg);
-}
-
-.s13 {
-  width: 16px;
-  height: 16px;
-  top: 10px;
-  left: 380px;
-  transform: rotate(-15deg);
-}
-
-.s14 {
-  width: 24px;
-  height: 24px;
-  top: 99px;
-  left: 750px;
-  transform: rotate(18deg);
-}
-
-.s15 {
-  width: 20px;
-  height: 20px;
-  top: 60px;
-  left: 1420px;
-  transform: rotate(-8deg);
-}
-
 #btm-half {
   background-color: var(--bg-dark);
   padding: 20px;
@@ -586,6 +476,7 @@ footer a {
   border-radius: 20px;
   box-shadow: 5px 5px 10px 10px rgb(18, 53, 159, .25)
 }
+
 
 /* columns for all devices */
 .columns-mobile {

@@ -76,24 +76,30 @@
                 <p>THIRD PLACE: Willow by: Gracie Bergmann</p>
             </div>
         </div>
-        <div id="submit" class="columns">
+        <div id="submit">
             <div class="star-wrapper">
-                <div id="email" class="star one">
-                    <h3>&#9733;Join Our Email List to Submit! &#9733;</h3>
-                        <label for="name">YOUR NAME:</label>
-                        <input type="text" id="name" name="name" placeholder="Enter Your Name...">
-                        <label for="user-email">YOUR EMAIL ADDRESS:</label>
-                        <input type="text" id="user-email" name="email" placeholder="Enter Your Email...">
+                <div id="email" class="star ">
+                    <h3>&#9733;Send an Email to get Started!! &#9733;</h3>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="6daaeb9b-0f60-475c-b92f-04ae762e4eab">
+                            <p>your name:</p>
+                            <input type="text" name="name" required> 
+                            <p> your email:</p>
+                            <input type="email" name="email" required>
+                            <p> your message to us:</p>
+                            <textarea name="message" required></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
                 </div>
             </div>
               <div >
                 <div id="this-month-contest" class="one">
                     <h2>&#9733;THIS MONTH'S CONTEST:&#9733;</h2>
-                    <p>Create any piece of art using only 3 colors! Using black and white is allowed! </p>
+                    <p>Create a spooky design!</p>
                 </div>
             </div>
         </div>
-        <h2 id="due">&#9733; This month's contest submission is due September 30th! &#9733;</h2>
+        <h2 id="due">&#9733; This month's contest submission is due OCTOBER 31st! &#9733;</h2>
         
     </main>
 
