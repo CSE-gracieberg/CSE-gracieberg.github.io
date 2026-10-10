@@ -1,7 +1,7 @@
 [
   {
     "_id": 1,
-    "img_name": "images/samdoesarts.jpg",
+    "img_name": "images/samdoesarts.png",
     "name": "SamDoesArts",
     "category": "video",
     "description": "Great for learning character design and portraits!",
@@ -10,7 +10,7 @@
   },
   {
     "_id": 2,
-    "img_name": "images/artforkidshub.jpg",
+    "img_name": "images/artkids.png",
     "name": "ArtForKidsHub",
     "category": "video",
     "description": "Simple drawings for beginners, geared towards children.",
@@ -19,7 +19,7 @@
   },
   {
     "_id": 3,
-    "img_name": "images/artsherpa.jpg",
+    "img_name": "images/artsherpa.png",
     "name": "The Art Sherpa",
     "category": "video",
     "description": "Step-by-step real-time painting tutorials",
@@ -28,7 +28,7 @@
   },
   {
     "_id": 4,
-    "img_name": "images/superraedizzle.jpg",
+    "img_name": "images/superraedizzle.png",
     "name": "SuperRaeDizzle",
     "category": "video",
     "description": "Learn about different ways to create realism art!",
@@ -37,7 +37,7 @@
   },
   {
     "_id": 5,
-    "img_name": "images/smarthistory.jpg",
+    "img_name": "images/smarthistory.png",
     "name": "Smarthistory",
     "category": "video",
     "description": "Learn about the history of art in an AP art history layout!",
@@ -46,7 +46,7 @@
   },
   {
     "_id": 6,
-    "img_name": "images/strathmore.jpg",
+    "img_name": "images/strathmore.png",
     "name": "Strathmore",
     "category": "shopping",
     "description": "Sketchbooks",
@@ -55,7 +55,7 @@
   },
   {
     "_id": 7,
-    "img_name": "images/prismacolor.jpg",
+    "img_name": "images/prismacolor.png",
     "name": "PrismaColor",
     "category": "shopping",
     "description": "Colored pencils, markers, graphite, and more",
@@ -64,7 +64,7 @@
   },
   {
     "_id": 8,
-    "img_name": "images/amazon.jpg",
+    "img_name": "images/amazon.png",
     "name": "Amazon",
     "category": "shopping",
     "description": "Beginner level art supplies",
@@ -73,7 +73,7 @@
   },
   {
     "_id": 9,
-    "img_name": "images/michaels.jpg",
+    "img_name": "images/michaels.png",
     "name": "Michaels",
     "category": "shopping",
     "description": "My go-to for any level of paint and painting supplies",
@@ -82,7 +82,7 @@
   },
   {
     "_id": 10,
-    "img_name": "images/crayola.jpg",
+    "img_name": "images/crayola.png",
     "name": "Crayola",
     "category": "shopping",
     "description": "Good, cheap supplies. Great for kids!",
