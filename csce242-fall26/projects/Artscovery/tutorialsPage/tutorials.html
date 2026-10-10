@@ -44,8 +44,27 @@
             <h1>TUTORIALS</h1>
             <h4>Learn how to paint, draw, color, and more right here! You don't have to follow these an any order! Take it at your own pace &#9733;</h4>
         </div>
-        <div id="tut-cards"> <!--I am going to make these modals and pop up with the tutorials!!-->
-             <h1>Painting Basics</h1>
+        <div id="tut-cards">
+            <h1>Painting Tutorials</h1>
+            <div id="painting-tuts" class="columns"></div>
+            <div id="splitbar">
+                <p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            </div>
+            <h1>Anatomy Tutorials</h1>
+            <div id="anatomy-tuts" class="columns"></div>
+            <div id="splitbar">
+                <p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            </div>
+            <h1>Intro to Color Theory</h1>
+            <div id="color-tuts" class="columns"></div>
+            <div id="splitbar">
+                <p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            </div>
+            <h1>Landscape Tutorials</h1>
+            <div id="landscapes-tuts" class="columns"></div>
+            </div>
+        <!--I am going to make these modals and pop up with the tutorials!!-->
+             <!--<h1>Painting Basics</h1>
             <div id="painting-tuts" class="columns">
                 <div id="paintlevel1">
                     <h3>LEVEL 1 </h3>
@@ -139,8 +158,8 @@
                       <p class="txt-star">&#9733;&#9733;&#9733;&#9733;</p>
                 </div>
                 <p>Putting all our methods together to make a final piece!</p>
-            </div>
-        </div>
+            </div>-->
+       
 
         <div id="splitbar">
             <p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</p>
@@ -160,7 +179,16 @@
             <!-- for when i can add this <a href="mailto:person1@example.com,person2@://example.com"Contact Me!</a>-->
         </div>
     </footer>
+    <div id="tutModal" class="tut-modal" onclick="this.style.display='none'">
+        <div class="tut-modal-box">
+            <h2 id="tutModalTitle"></h2>
+            <p id="tutModalStars"></p>
+            <p id="tutModalDescription"></p>
+            <p id="tutModalLesson"></p>
+        </div>
+    </div>
                 <script src="../scripts/togglenav.js"></script>
+                <script src="../scripts/modals.js"></script>
 
 </body>
 </html>

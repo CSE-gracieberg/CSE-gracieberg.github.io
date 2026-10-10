@@ -94,6 +94,16 @@ body {
 #main-nav a:hover {
   color: var(--bg-dark);
   background-color: rgba(255, 255, 255, 0.25);
+} 
+#splitbar {
+    background: var(--rainbow);
+    background-clip:text;
+    background-size: auto;
+    color: transparent;
+    text-align: center;
+    letter-spacing: 50px;
+    font-size:x-large;
+    padding:30px, 30px;
 }
 /* columns for all devices */
 .columns-mobile {
@@ -136,63 +146,89 @@ body {
 #tut-cards  h3:hover {
   box-shadow: 3px 6px rgb(18, 53, 159, .25);
 }
-.txt-star {
-  color: white;
-  font-size: large;
-  text-shadow:2px 2px 4px rgb(255, 255, 255, .2);
-}
+
 /* tutorials*/
+.tut-card {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
 
-
-#paintlevel1, #anatomylevel1, #colorlevel1, #landlevel1{
-    align-items: center;
-    background-color:  rgb(255, 141, 121);
+.tut-card h3 {
     width: 150px;
+    margin: 0 auto;
+    padding: 8px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     box-shadow: 2px 4px rgb(18, 53, 159, .25);
     letter-spacing: 2px;
+}
+
+.level1  { 
+  background-color: rgb(255, 141, 121);
+  padding: 5px;
+  margin: auto;
+  border-radius: 15px;
+ }
+.level2  {
+  background-color: rgb(252, 239, 141); 
+  padding: 5px;
+  margin: auto;
+  border-radius: 15px;
+}
+.level3  {
+  background-color: rgb(157, 249, 212); 
+  padding: 5px;
+  margin: auto;
+  border-radius: 15px;
+}
+.level4  { 
+  background-color: rgb(143, 135, 247); 
+  padding: 5px;
+  margin: auto;
+  border-radius: 15px;
+
+}
+
+
+
+/*tut modals*/
+.tut-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+.tut-modal-box {
+    background-color: var(--bg);
+    width: 500px;
+    max-width: 90%;
+    margin: 100px auto;
+    padding: 30px;
+    border: 4px solid var(--bg-dark);
+    border-radius: 30px;
     text-align: center;
-    padding: 8px;
-
-}
-#paintlevel2 , #colorlevel2, #anatomylevel2, #landlevel2{
-  align-items: center;
-  background-color: rgb(252, 239, 141);
-  width: 150px;
-  box-shadow: 2px 4px rgb(18, 53, 159, .25);
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  letter-spacing: 2px;
-  text-align: center;
-  padding: 8px;
-
-}
-#paintlevel3, #colorlevel3, #anatomylevel3, #landlevel3 {
-  align-items: center;
-  background-color: rgb(157, 249, 212);
-  width: 150px;
-  box-shadow: 2px 4px rgb(18, 53, 159, .25);
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  letter-spacing: 2px;
-  text-align: center;
-  padding: 8px;
-
-}
-#paintlevel4, #anatomylevel4, #colorlevel4, #landlevel4 {
-    align-items: center;
-    background-color: rgb(143, 135, 247);
-    box-shadow: 2px 4px rgb(18, 53, 159, .25);
-    width: 150px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    letter-spacing: 2px;
-    text-align: center;
-    padding: 8px;
-
+    color: var(--accent);
+    box-shadow: 0 8px 20px rgb(42, 79, 108, .5);
 }
 
+.tut-modal-box h2 {
+    margin-top: 0;
+    padding: 10px;
+    background-color: var(--bg-dark);
+    color: var(--highlight);
+    border-radius: 120px;
+    font-family: "Mansalva";
+}
+
+.tut-modal-box p {
+    max-width: none;
+}
 
 #splitbar p {
   padding: 30px;
