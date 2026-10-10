@@ -57,6 +57,9 @@ a:hover {
 a:visited{
     text-decoration: none;
 }
+h1 a{
+    text-decoration: none;
+}
 
 
 /*Navigation*/
